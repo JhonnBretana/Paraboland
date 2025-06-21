@@ -53,14 +53,14 @@ TagManager:
   - name: ground
     uniqueID: 192558285
     locked: 0
+  - name: wall
+    uniqueID: 2243932911
+    locked: 0
   - name: vegetation
     uniqueID: 2617109787
     locked: 0
   - name: house
     uniqueID: 4060901249
-    locked: 0
-  - name: wall
-    uniqueID: 2243932911
     locked: 0
   m_RenderingLayers:
   - Default
