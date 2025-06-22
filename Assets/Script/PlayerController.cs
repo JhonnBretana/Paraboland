@@ -8,11 +8,19 @@ public class PlayerController : MonoBehaviour
     private Vector2 input;
 
     private Animator animator;
+    private Rigidbody2D rb;
+    private BoxCollider2D boxCollider;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
         animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+        boxCollider = GetComponent<BoxCollider2D>();
+        if (rb != null)
+        {
+            rb.gravityScale = 0;
+        }
     }
 
     // Update is called once per frame
@@ -34,28 +42,41 @@ public class PlayerController : MonoBehaviour
                 animator.SetFloat("moveX", input.x);
                 animator.SetFloat("moveY", input.y);
 
-                var targetPos = transform.position;
-                targetPos.x += input.x;
-                targetPos.y += input.y;
-
-                StartCoroutine(Move(targetPos));
+                var targetPos = rb.position + input;
+                if (IsPathClear(targetPos))
+                {
+                    StartCoroutine(Move(targetPos));
+                }
             }
         }
 
         animator.SetBool("isMoving", isMoving);
     }
 
-    IEnumerator Move(Vector3 targetPos)
+    IEnumerator Move(Vector2 targetPos)
     {
         isMoving = true;
 
-        // Move until close enough to the target position
-        while ((targetPos - transform.position).sqrMagnitude > Mathf.Epsilon)
+        while ((targetPos - rb.position).sqrMagnitude > Mathf.Epsilon)
         {
-            transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);
+            Vector2 newPosition = Vector2.MoveTowards(rb.position, targetPos, moveSpeed * Time.deltaTime);
+            rb.MovePosition(newPosition);
             yield return null;
         }
-        transform.position = targetPos;
+        rb.MovePosition(targetPos);
         isMoving = false;
+    }
+
+    private bool IsPathClear(Vector3 targetPos)
+    {
+        // Temporarily disable our own collider so we don't hit ourselves
+        boxCollider.enabled = false;
+        // Check for colliders at the target position using a slightly smaller box
+        Collider2D hit = Physics2D.OverlapBox((Vector2)targetPos + boxCollider.offset, boxCollider.size * 0.4f, 0.4f);
+        // Re-enable our collider
+        boxCollider.enabled = true;
+        
+        // If we didn't hit anything, the path is clear
+        return hit == null;
     }
 }
