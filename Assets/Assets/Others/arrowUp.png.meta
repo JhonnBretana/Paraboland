@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 028ba0520932f9a42818c078b3c0fa6e
+guid: 66aafaf7f29277745888797ac25cc303
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3471531926309068470
-    second: WIN Box_0
+      213: 1971738423993067291
+    second: arrowUp_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WIN Box_0
+      name: arrowUp_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 43
-        width: 440
-        height: 176
+        x: 19
+        y: 11
+        width: 145
+        height: 137
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a41abe12b14a2dfc0800000000000000
-      internalID: -3471531926309068470
+      spriteID: b17681066a50d5b10800000000000000
+      internalID: 1971738423993067291
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      WIN Box_0: -3471531926309068470
+      arrowUp_0: 1971738423993067291
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
