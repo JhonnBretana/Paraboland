@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 13be2e3246e23344ab0a2d742cf4289b
+guid: d6df74f7da338b34f9b7b879a3eb0b21
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4285182070928979371
-    second: Patient1_0
+      213: 2671218084691223152
+    second: LOST Character_0
+  - first:
+      213: 1526778396875595256
+    second: LOST Character_1
+  - first:
+      213: -2503483873188171874
+    second: LOST Character_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +132,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Patient1_0
+      name: LOST Character_0
       rect:
         serializedVersion: 2
-        x: 110
-        y: 6
-        width: 311
-        height: 526
+        x: 72
+        y: 7
+        width: 248
+        height: 448
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +147,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 55ac7604c99f784c0800000000000000
-      internalID: -4285182070928979371
+      spriteID: 072ae9ff1b2121520800000000000000
+      internalID: 2671218084691223152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOST Character_1
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 336
+        width: 104
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fd928cdcd4303510800000000000000
+      internalID: 1526778396875595256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOST Character_2
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 297
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f23bd6ea6d14dd0800000000000000
+      internalID: -2503483873188171874
       vertices: []
       indices: 
       edges: []
@@ -160,8 +210,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Patient1_0: -4285182070928979371
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
