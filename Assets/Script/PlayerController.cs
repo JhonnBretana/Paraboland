@@ -3,46 +3,33 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
-    public float moveSpeed = 5f;
+    public float moveSpeed = 4f;
+    public LayerMask obstacleLayer;
+    public float checkRadius = 0.1f; // Adjustable radius for collision check
     private bool isMoving;
     private Vector2 input;
-
     private Animator animator;
-    private Rigidbody2D rb;
-    private BoxCollider2D boxCollider;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
         animator = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody2D>();
-        boxCollider = GetComponent<BoxCollider2D>();
-        if (rb != null)
-        {
-            rb.gravityScale = 0;
-        }
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (!isMoving)
         {
-            // Get input
             input.x = Input.GetAxisRaw("Horizontal");
             input.y = Input.GetAxisRaw("Vertical");
 
-            // Prevent diagonal movement
             if (input.x != 0) input.y = 0;
 
-            // If there is input, move the player
             if (input != Vector2.zero)
             {
-                // Set the animator parameters for idle
                 animator.SetFloat("moveX", input.x);
                 animator.SetFloat("moveY", input.y);
 
-                var targetPos = rb.position + input;
+                var targetPos = (Vector2)transform.position + input;
                 if (IsPathClear(targetPos))
                 {
                     StartCoroutine(Move(targetPos));
@@ -57,26 +44,24 @@ public class PlayerController : MonoBehaviour
     {
         isMoving = true;
 
-        while ((targetPos - rb.position).sqrMagnitude > Mathf.Epsilon)
+        while ((targetPos - (Vector2)transform.position).sqrMagnitude > 0.01f)
         {
-            Vector2 newPosition = Vector2.MoveTowards(rb.position, targetPos, moveSpeed * Time.deltaTime);
-            rb.MovePosition(newPosition);
+            transform.position = Vector2.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);
             yield return null;
         }
-        rb.MovePosition(targetPos);
+        transform.position = targetPos;
         isMoving = false;
     }
 
-    private bool IsPathClear(Vector3 targetPos)
+    private bool IsPathClear(Vector2 targetPos)
     {
-        // Temporarily disable our own collider so we don't hit ourselves
-        boxCollider.enabled = false;
-        // Check for colliders at the target position using a slightly smaller box
-        Collider2D hit = Physics2D.OverlapBox((Vector2)targetPos + boxCollider.offset, boxCollider.size * 0.4f, 0.4f);
-        // Re-enable our collider
-        boxCollider.enabled = true;
-        
-        // If we didn't hit anything, the path is clear
+        Collider2D hit = Physics2D.OverlapCircle(targetPos, checkRadius, obstacleLayer);
         return hit == null;
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, checkRadius);
     }
 }
