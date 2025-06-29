@@ -60,11 +60,11 @@ TagManager:
   - name: stair
     uniqueID: 888161587
     locked: 0
-  - name: Player
-    uniqueID: 2614815169
-    locked: 0
   - name: house
     uniqueID: 4060901249
+    locked: 0
+  - name: Player
+    uniqueID: 2614815169
     locked: 0
   m_RenderingLayers:
   - Default
