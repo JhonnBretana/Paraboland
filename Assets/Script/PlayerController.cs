@@ -11,19 +11,21 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private BoxCollider2D boxCollider;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [Header("Collision Settings")]
+    public LayerMask solidObjectsLayer; // ← assign this in the Inspector (e.g., to Walls)
+
     void Awake()
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
+
         if (rb != null)
         {
-            rb.gravityScale = 0;
+            rb.gravityScale = 0; // Top-down movement, so no gravity
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (!isMoving)
@@ -35,14 +37,15 @@ public class PlayerController : MonoBehaviour
             // Prevent diagonal movement
             if (input.x != 0) input.y = 0;
 
-            // If there is input, move the player
             if (input != Vector2.zero)
             {
-                // Set the animator parameters for idle
+                // Set animator parameters
                 animator.SetFloat("moveX", input.x);
                 animator.SetFloat("moveY", input.y);
 
-                var targetPos = rb.position + input;
+                // Calculate target position
+                Vector2 targetPos = rb.position + input;
+
                 if (IsPathClear(targetPos))
                 {
                     StartCoroutine(Move(targetPos));
@@ -63,20 +66,35 @@ public class PlayerController : MonoBehaviour
             rb.MovePosition(newPosition);
             yield return null;
         }
+
         rb.MovePosition(targetPos);
         isMoving = false;
     }
 
     private bool IsPathClear(Vector3 targetPos)
     {
-        // Temporarily disable our own collider so we don't hit ourselves
         boxCollider.enabled = false;
-        // Check for colliders at the target position using a slightly smaller box
-        Collider2D hit = Physics2D.OverlapBox((Vector2)targetPos + boxCollider.offset, boxCollider.size * 0.4f, 0.4f);
-        // Re-enable our collider
+
+        // Adjust the check box size and position
+        Collider2D hit = Physics2D.OverlapBox(
+            (Vector2)targetPos + boxCollider.offset,
+            boxCollider.size * 0.4f,
+            0f,
+            solidObjectsLayer // Only check against walls
+        );
+
         boxCollider.enabled = true;
-        
-        // If we didn't hit anything, the path is clear
         return hit == null;
+    }
+
+    // Debug visual for the collision check box
+    void OnDrawGizmos()
+    {
+        if (boxCollider == null) return;
+
+        Gizmos.color = Color.red;
+
+        Vector2 checkPosition = (Vector2)transform.position + boxCollider.offset + input;
+        Gizmos.DrawWireCube(checkPosition, boxCollider.size * 0.4f);
     }
 }
