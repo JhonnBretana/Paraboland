@@ -10,9 +10,19 @@ public class PlayerController : MonoBehaviour
     private Vector2 input;
     private Animator animator;
 
+    [Header("Collision Settings")]
+    public LayerMask solidObjectsLayer; // ← assign this in the Inspector (e.g., to Walls)
+
     void Awake()
     {
         animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+        boxCollider = GetComponent<BoxCollider2D>();
+
+        if (rb != null)
+        {
+            rb.gravityScale = 0; // Top-down movement, so no gravity
+        }
     }
 
     void Update()
@@ -26,10 +36,13 @@ public class PlayerController : MonoBehaviour
 
             if (input != Vector2.zero)
             {
+                // Set animator parameters
                 animator.SetFloat("moveX", input.x);
                 animator.SetFloat("moveY", input.y);
 
-                var targetPos = (Vector2)transform.position + input;
+                // Calculate target position
+                Vector2 targetPos = rb.position + input;
+
                 if (IsPathClear(targetPos))
                 {
                     StartCoroutine(Move(targetPos));
@@ -49,19 +62,35 @@ public class PlayerController : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);
             yield return null;
         }
-        transform.position = targetPos;
+
+        rb.MovePosition(targetPos);
         isMoving = false;
     }
 
     private bool IsPathClear(Vector2 targetPos)
     {
-        Collider2D hit = Physics2D.OverlapCircle(targetPos, checkRadius, obstacleLayer);
+        boxCollider.enabled = false;
+
+        // Adjust the check box size and position
+        Collider2D hit = Physics2D.OverlapBox(
+            (Vector2)targetPos + boxCollider.offset,
+            boxCollider.size * 0.4f,
+            0f,
+            solidObjectsLayer // Only check against walls
+        );
+
+        boxCollider.enabled = true;
         return hit == null;
     }
 
-    void OnDrawGizmosSelected()
+    // Debug visual for the collision check box
+    void OnDrawGizmos()
     {
+        if (boxCollider == null) return;
+
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, checkRadius);
+
+        Vector2 checkPosition = (Vector2)transform.position + boxCollider.offset + input;
+        Gizmos.DrawWireCube(checkPosition, boxCollider.size * 0.4f);
     }
 }
