@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     private bool isMoving;
     private Vector2 input;
     private Animator animator;
+    private Rigidbody2D rb;
+    private BoxCollider2D boxCollider;
 
     [Header("Collision Settings")]
     public LayerMask solidObjectsLayer; // ← assign this in the Inspector (e.g., to Walls)
