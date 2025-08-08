@@ -1,0 +1,8 @@
+E:/MAKALAT/unity/Paraboland/.utmp/RelWithDebInfo/6b73366s/arm64-v8a/CMakeFiles/edit_cache.dir
+E:/MAKALAT/unity/Paraboland/.utmp/RelWithDebInfo/6b73366s/arm64-v8a/CMakeFiles/rebuild_cache.dir
+E:/MAKALAT/unity/Paraboland/.utmp/RelWithDebInfo/6b73366s/arm64-v8a/GameActivity/CMakeFiles/game.dir
+E:/MAKALAT/unity/Paraboland/.utmp/RelWithDebInfo/6b73366s/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+E:/MAKALAT/unity/Paraboland/.utmp/RelWithDebInfo/6b73366s/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
+E:/MAKALAT/unity/Paraboland/.utmp/RelWithDebInfo/6b73366s/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir
+E:/MAKALAT/unity/Paraboland/.utmp/RelWithDebInfo/6b73366s/arm64-v8a/FramePacing/CMakeFiles/edit_cache.dir
+E:/MAKALAT/unity/Paraboland/.utmp/RelWithDebInfo/6b73366s/arm64-v8a/FramePacing/CMakeFiles/rebuild_cache.dir

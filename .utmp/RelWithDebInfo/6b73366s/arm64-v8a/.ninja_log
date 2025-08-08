@@ -1,0 +1,12 @@
+# ninja log v5
+54	1347	7762787805398234	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	781e987e55b77862
+1349	2707	7762787818512906	E:/MAKALAT/unity/Paraboland/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6b73366s/obj/arm64-v8a/libswappywrapper.so	c2f2404b11c529ca
+20	4254	7762787834277379	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	f8e16a84b5587371
+14	4270	7762787834425713	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	3ffa19c4f529a47c
+34	4277	7762787834491229	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	6348fad71eda09f9
+46	4314	7762787835045827	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	3b3142795cb8f09c
+40	4416	7762787835909988	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	f76249074e547ba3
+1	4435	7762787836182201	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	34df43eae6e72ab1
+27	4675	7762787838604714	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	6c9b611951db6fa0
+7	4981	7762787841669971	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	faca6b5126c204bb
+4981	5755	7762787849190518	E:/MAKALAT/unity/Paraboland/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6b73366s/obj/arm64-v8a/libgame.so	cbaa20e437eff1ab
