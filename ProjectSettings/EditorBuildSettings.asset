@@ -18,10 +18,10 @@ EditorBuildSettings:
     path: Assets/Scenes/ChapterSelection.unity
     guid: 34a7076c8942238418775c84d72af175
   - enabled: 1
-    path: Assets/Scenes/Map1/Chapter1_Easy.unity
+    path: Assets/Scenes/Map1/Chapter1other.unity
     guid: f27442a1aea05424385d4efc926901ce
   - enabled: 1
-    path: Assets/Scenes/Questions/Chapter 1/EasyQuestion2.unity
+    path: Assets/Scenes/Questions/EasyQuestion2.unity
     guid: 722309e380be1524cb2fca5e113192ac
   - enabled: 0
     path: Assets/Scenes/Questions/Chapter 1/Draft Question.unity
