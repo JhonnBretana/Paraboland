@@ -23,7 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Map1/Chapter1.unity
     guid: f27442a1aea05424385d4efc926901ce
-  - enabled: 0
+  - enabled: 1
     path: Assets/Component/BattleSceneComponent/BattleScene.unity
     guid: 5b7e702b2f4facd438cfec2cf4576535
   - enabled: 0
