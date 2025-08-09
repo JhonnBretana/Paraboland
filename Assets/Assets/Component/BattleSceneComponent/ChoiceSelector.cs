@@ -11,16 +11,16 @@ public class ChoiceSelector : MonoBehaviour
     public int correctAnswerIndex = 0; // Set this in the Inspector to the correct choice index (0-3)
 
     public GameObject[] objectsToHide; // Assign Character, Patient, Dialog Box, Choices Box in Inspector
+    public GameObject dialogBox; // Assign Dialog Box in Inspector
 
     void Start()
     {
+        ShowDialog();
+
         HighlightChoice();
         // Hide modals at start
         if (resultModalWin != null) resultModalWin.SetActive(false);
         if (resultModalLost != null) resultModalLost.SetActive(false);
-
-        // Hide choices etc. at start
-        SetObjectsToHideActive(false);
 
         // Add tap/click listeners to each button
         for (int i = 0; i < choiceButtons.Length; i++)
@@ -40,9 +40,8 @@ public class ChoiceSelector : MonoBehaviour
             SetObjectsToHideActive(false);
             return;
         }
-        // Remove: SetObjectsToHideActive(true);
-        // No keyboard input needed for tap version
     }
+
     void HighlightChoice()
     {
         for (int i = 0; i < choiceButtons.Length; i++)
@@ -121,5 +120,22 @@ public class ChoiceSelector : MonoBehaviour
     public void SubmitAnswer()
     {
         CheckAnswer(selectedIndex);
+    }
+
+    // --- Merged Dialog Methods ---
+    public void ShowDialog()
+    {
+        if (dialogBox != null)
+            dialogBox.SetActive(true);
+
+        SetObjectsToHideActive(false); // Hide choices etc.
+    }
+
+    public void CloseDialog()
+    {
+        SetObjectsToHideActive(true); // Show choices etc. FIRST
+        this.gameObject.SetActive(true);
+        if (dialogBox != null)
+            dialogBox.SetActive(false);
     }
 }

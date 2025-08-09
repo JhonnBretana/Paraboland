@@ -524,6 +524,7 @@ MonoBehaviour:
   - {fileID: 277378126}
   - {fileID: 34912903}
   - {fileID: 1754142547}
+  dialogBox: {fileID: 941602556}
 --- !u!4 &167032364
 Transform:
   m_ObjectHideFlags: 0
@@ -1822,7 +1823,6 @@ GameObject:
   - component: {fileID: 941602557}
   - component: {fileID: 941602559}
   - component: {fileID: 941602558}
-  - component: {fileID: 941602560}
   m_Layer: 5
   m_Name: Dialog Box
   m_TagString: Untagged
@@ -1889,20 +1889,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 941602556}
   m_CullTransparentMesh: 1
---- !u!114 &941602560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 941602556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25cec2aa074ff1c4181e20feab95112a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogBox: {fileID: 941602556}
-  choiceSelector: {fileID: 0}
 --- !u!1 &961777224
 GameObject:
   m_ObjectHideFlags: 0
@@ -2343,8 +2329,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 941602560}
-        m_TargetAssemblyTypeName: QuestionDialogTrigger, Assembly-CSharp
+      - m_Target: {fileID: 167032363}
+        m_TargetAssemblyTypeName: ChoiceSelector, Assembly-CSharp
         m_MethodName: ShowDialog
         m_Mode: 1
         m_Arguments:
@@ -3895,8 +3881,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 941602560}
-        m_TargetAssemblyTypeName: QuestionDialogTrigger, Assembly-CSharp
+      - m_Target: {fileID: 167032363}
+        m_TargetAssemblyTypeName: ChoiceSelector, Assembly-CSharp
         m_MethodName: CloseDialog
         m_Mode: 1
         m_Arguments:
