@@ -1400,7 +1400,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   swipeSnap: {fileID: 1308474185}
   sceneNames:
-  - Chapter1
+  - Chapter1_Easy
   - Chapt2_Easy
   - 
   - 
