@@ -19,6 +19,9 @@ public class ChoiceSelector : MonoBehaviour
         if (resultModalWin != null) resultModalWin.SetActive(false);
         if (resultModalLost != null) resultModalLost.SetActive(false);
 
+        // Hide choices etc. at start
+        SetObjectsToHideActive(false);
+
         // Add tap/click listeners to each button
         for (int i = 0; i < choiceButtons.Length; i++)
         {
@@ -37,13 +40,9 @@ public class ChoiceSelector : MonoBehaviour
             SetObjectsToHideActive(false);
             return;
         }
-        else
-        {
-            SetObjectsToHideActive(true);
-        }
+        // Remove: SetObjectsToHideActive(true);
         // No keyboard input needed for tap version
     }
-
     void HighlightChoice()
     {
         for (int i = 0; i < choiceButtons.Length; i++)
@@ -88,12 +87,17 @@ public class ChoiceSelector : MonoBehaviour
         }
     }
 
-    void SetObjectsToHideActive(bool isActive)
+    public void SetObjectsToHideActive(bool isActive)
     {
+        Debug.Log("SetObjectsToHideActive called with: " + isActive);
         if (objectsToHide == null) return;
         foreach (var obj in objectsToHide)
         {
-            if (obj != null) obj.SetActive(isActive);
+            if (obj != null)
+            {
+                obj.SetActive(isActive);
+                Debug.Log("SetActive " + obj.name + " to " + isActive);
+            }
         }
     }
 
