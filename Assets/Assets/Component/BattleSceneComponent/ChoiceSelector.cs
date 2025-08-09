@@ -5,6 +5,7 @@ public class ChoiceSelector : MonoBehaviour
 {
     public Button[] choiceButtons; // Assign your 4 choice buttons in the Inspector
     private int selectedIndex = 0;
+    private int pendingIndex = -1; // Store tapped choice index
 
     public GameObject resultModalWin;
     public GameObject resultModalLost;
@@ -13,64 +14,31 @@ public class ChoiceSelector : MonoBehaviour
     public GameObject[] objectsToHide; // Assign Character, Patient, Dialog Box, Choices Box in Inspector
     public GameObject dialogBox; // Assign Dialog Box in Inspector
 
+    public GameObject confirmationDialog; // Assign Confirmation GameObject in Inspector
+
     void Start()
     {
         ShowDialog();
 
-        HighlightChoice();
-        // Hide modals at start
+        // HighlightChoice(); // Remove this line
         if (resultModalWin != null) resultModalWin.SetActive(false);
         if (resultModalLost != null) resultModalLost.SetActive(false);
+        if (confirmationDialog != null) confirmationDialog.SetActive(false);
 
-        // Add tap/click listeners to each button
         for (int i = 0; i < choiceButtons.Length; i++)
         {
-            int index = i; // Capture index for the lambda
-            choiceButtons[i].onClick.AddListener(() => OnChoiceSelected(index));
+            int index = i;
+            choiceButtons[i].onClick.AddListener(() => OnChoiceTapped(index));
         }
     }
-
     void Update()
     {
-        // Disable selection/highlight if a modal is active
         if ((resultModalWin != null && resultModalWin.activeSelf) ||
             (resultModalLost != null && resultModalLost.activeSelf))
         {
-            UnhighlightAllChoices();
+            // UnhighlightAllChoices(); // Remove this line
             SetObjectsToHideActive(false);
             return;
-        }
-    }
-
-    void HighlightChoice()
-    {
-        for (int i = 0; i < choiceButtons.Length; i++)
-        {
-            var button = choiceButtons[i];
-            var colors = button.colors;
-            if (i == selectedIndex)
-            {
-                colors.normalColor = Color.yellow;
-                button.transform.localScale = new Vector3(1.1f, 1.1f, 1f);
-            }
-            else
-            {
-                colors.normalColor = Color.white;
-                button.transform.localScale = Vector3.one;
-            }
-            button.colors = colors;
-        }
-    }
-
-    void UnhighlightAllChoices()
-    {
-        for (int i = 0; i < choiceButtons.Length; i++)
-        {
-            var button = choiceButtons[i];
-            var colors = button.colors;
-            colors.normalColor = Color.white;
-            button.transform.localScale = Vector3.one;
-            button.colors = colors;
         }
     }
 
@@ -88,14 +56,12 @@ public class ChoiceSelector : MonoBehaviour
 
     public void SetObjectsToHideActive(bool isActive)
     {
-        Debug.Log("SetObjectsToHideActive called with: " + isActive);
         if (objectsToHide == null) return;
         foreach (var obj in objectsToHide)
         {
             if (obj != null)
             {
                 obj.SetActive(isActive);
-                Debug.Log("SetActive " + obj.name + " to " + isActive);
             }
         }
     }
@@ -106,20 +72,38 @@ public class ChoiceSelector : MonoBehaviour
         if (resultModalLost != null) resultModalLost.SetActive(false);
         SetObjectsToHideActive(true);
         selectedIndex = 0;
-        HighlightChoice();
+        // HighlightChoice(); // Remove this line
     }
 
-    void OnChoiceSelected(int index)
+
+    // Called when a choice is tapped
+    void OnChoiceTapped(int index)
     {
-        selectedIndex = index;
-        HighlightChoice();
-        // Do NOT check answer here
+        pendingIndex = index;
+        if (confirmationDialog != null)
+            confirmationDialog.SetActive(true);
     }
 
-    // Call this from the Submit button's OnClick event
-    public void SubmitAnswer()
+    // Called by the Submit button in the confirmation dialog
+    public void SubmitConfirmedChoice()
     {
-        CheckAnswer(selectedIndex);
+        if (pendingIndex >= 0)
+        {
+            selectedIndex = pendingIndex;
+            // HighlightChoice(); // Remove this line
+            if (confirmationDialog != null)
+                confirmationDialog.SetActive(false);
+
+            CheckAnswer(selectedIndex);
+        }
+    }
+
+    // Optional: Called by a Cancel button in the confirmation dialog
+    public void CancelConfirmation()
+    {
+        pendingIndex = -1;
+        if (confirmationDialog != null)
+            confirmationDialog.SetActive(false);
     }
 
     // --- Merged Dialog Methods ---
