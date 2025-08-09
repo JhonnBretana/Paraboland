@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ChoiceSelector : MonoBehaviour
 {
@@ -16,8 +17,21 @@ public class ChoiceSelector : MonoBehaviour
 
     public GameObject confirmationDialog; // Assign Confirmation GameObject in Inspector
 
+    public TMP_Text questionText; // Assign in Inspector
+
     void Start()
     {
+        int questionIndex = PlayerPrefs.GetInt("CurrentQuestionIndex", 0);
+        questionText.text = Chapter1Questions.Easy[questionIndex];
+        for (int i = 0; i < choiceButtons.Length; i++)
+        {
+            // Use TMP_Text for button label
+            TMP_Text btnText = choiceButtons[i].GetComponentInChildren<TMP_Text>();
+            if (btnText != null)
+                btnText.text = Chapter1Choices.Easy[questionIndex, i];
+        }
+        correctAnswerIndex = Chapter1Answers.Easy[questionIndex];
+
         ShowDialog();
 
         // HighlightChoice(); // Remove this line

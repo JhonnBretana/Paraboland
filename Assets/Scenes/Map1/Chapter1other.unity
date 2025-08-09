@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 107099943}
   - component: {fileID: 107099942}
   m_Layer: 0
-  m_Name: Chapt1Easy2
+  m_Name: house_ (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -354,7 +354,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: EasyQuestion2
-  questionIndex: 1
 --- !u!483693784 &107099947
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -25870,7 +25869,7 @@ GameObject:
   - component: {fileID: 751002177}
   - component: {fileID: 751002176}
   m_Layer: 0
-  m_Name: Chapt1Easy3
+  m_Name: house_ (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26088,7 +26087,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: EasyQuestion2
-  questionIndex: 2
 --- !u!483693784 &751002181
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -47176,7 +47174,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 5.625
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -51067,7 +51065,7 @@ GameObject:
   - component: {fileID: 2111870341}
   - component: {fileID: 2111870340}
   m_Layer: 0
-  m_Name: Chapt1Easy1
+  m_Name: house_ (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51477,7 +51475,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: EasyQuestion2
-  questionIndex: 0
 --- !u!61 &2111870340
 BoxCollider2D:
   m_ObjectHideFlags: 0
