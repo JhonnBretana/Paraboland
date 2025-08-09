@@ -18,6 +18,13 @@ public class ChoiceSelector : MonoBehaviour
         // Hide modals at start
         if (resultModalWin != null) resultModalWin.SetActive(false);
         if (resultModalLost != null) resultModalLost.SetActive(false);
+
+        // Add tap/click listeners to each button
+        for (int i = 0; i < choiceButtons.Length; i++)
+        {
+            int index = i; // Capture index for the lambda
+            choiceButtons[i].onClick.AddListener(() => OnChoiceSelected(index));
+        }
     }
 
     void Update()
@@ -26,54 +33,15 @@ public class ChoiceSelector : MonoBehaviour
         if ((resultModalWin != null && resultModalWin.activeSelf) ||
             (resultModalLost != null && resultModalLost.activeSelf))
         {
-            // Remove highlight from all buttons
             UnhighlightAllChoices();
-            // Hide specified objects
             SetObjectsToHideActive(false);
             return;
         }
         else
         {
-            // Show specified objects if modals are not active
             SetObjectsToHideActive(true);
         }
-
-        // Assuming your choices are arranged in a 2x2 grid:
-        // [0] [1]
-        // [2] [3]
-        int rowCount = 2;
-        int colCount = 2;
-        int row = selectedIndex / colCount;
-        int col = selectedIndex % colCount;
-
-        if (Input.GetKeyDown(KeyCode.W)) // Up
-        {
-            row = (row + rowCount - 1) % rowCount;
-            selectedIndex = row * colCount + col;
-            HighlightChoice();
-        }
-        else if (Input.GetKeyDown(KeyCode.S)) // Down
-        {
-            row = (row + 1) % rowCount;
-            selectedIndex = row * colCount + col;
-            HighlightChoice();
-        }
-        else if (Input.GetKeyDown(KeyCode.A)) // Left
-        {
-            col = (col + colCount - 1) % colCount;
-            selectedIndex = row * colCount + col;
-            HighlightChoice();
-        }
-        else if (Input.GetKeyDown(KeyCode.D)) // Right
-        {
-            col = (col + 1) % colCount;
-            selectedIndex = row * colCount + col;
-            HighlightChoice();
-        }
-        else if (Input.GetKeyDown(KeyCode.Space))
-        {
-            CheckAnswer(selectedIndex);
-        }
+        // No keyboard input needed for tap version
     }
 
     void HighlightChoice()
@@ -136,5 +104,18 @@ public class ChoiceSelector : MonoBehaviour
         SetObjectsToHideActive(true);
         selectedIndex = 0;
         HighlightChoice();
+    }
+
+    void OnChoiceSelected(int index)
+    {
+        selectedIndex = index;
+        HighlightChoice();
+        // Do NOT check answer here
+    }
+
+    // Call this from the Submit button's OnClick event
+    public void SubmitAnswer()
+    {
+        CheckAnswer(selectedIndex);
     }
 }
