@@ -1,0 +1,2884 @@
+fileFormatVersion: 2
+guid: 11dd1c7c852647846b3e7e28f0bbd43a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5743887182734680204
+    second: Paraboland tilemap 2-01_0
+  - first:
+      213: 843434881888895056
+    second: Paraboland tilemap 2-01_1
+  - first:
+      213: 7863749515624110404
+    second: Paraboland tilemap 2-01_2
+  - first:
+      213: -6092896446910288812
+    second: Paraboland tilemap 2-01_3
+  - first:
+      213: -8024505356764832532
+    second: Paraboland tilemap 2-01_4
+  - first:
+      213: -2240450504813220299
+    second: Paraboland tilemap 2-01_5
+  - first:
+      213: -5028510190305935927
+    second: Paraboland tilemap 2-01_6
+  - first:
+      213: -2016111425863823561
+    second: Paraboland tilemap 2-01_7
+  - first:
+      213: -250636313420589392
+    second: Paraboland tilemap 2-01_8
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 82
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_0
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1176
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c80e1d4d5f266bf40800000000000000
+      internalID: 5743887182734680204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_1
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 1176
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 050492e6e8b74bb00800000000000000
+      internalID: 843434881888895056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_2
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 1176
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 449dc614586a12d60800000000000000
+      internalID: 7863749515624110404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_3
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 1176
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45c2cac86fea17ba0800000000000000
+      internalID: -6092896446910288812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_4
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1176
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cec10d7c4ea33a090800000000000000
+      internalID: -8024505356764832532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_5
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1176
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53e63c3e22258e0e0800000000000000
+      internalID: -2240450504813220299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_6
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1176
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cdf165cf94273ab0800000000000000
+      internalID: -5028510190305935927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_7
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 1176
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73fc7c907555504e0800000000000000
+      internalID: -2016111425863823561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_8
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1176
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b690c2d99f858cf0800000000000000
+      internalID: -250636313420589392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_9
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1094
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa1678b462fc1ef46b0ce20e75c9f17a
+      internalID: 1875086925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_10
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 1094
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a7d224e5f57cc743a1ded9ee0496fc4
+      internalID: -32021615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_11
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 1094
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba31a58789fcd9f4597322ca234f12eb
+      internalID: 185946868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_12
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 1094
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 013498f01d073114f83994f47fd91551
+      internalID: -2083884051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_13
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1094
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 154e31bd9780ba9459e7a3c069845f7b
+      internalID: -649776869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_14
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1094
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daff2968f07360146aafcaaff5a11e1e
+      internalID: 1005342295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_15
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1094
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd24e24de3d43994581a4706da67c58d
+      internalID: -598923634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_16
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 1094
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48700c642100df540a3c618e2f1736a7
+      internalID: 833520516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_17
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1094
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f7d4fd1cedb6a741876aab5ee648350
+      internalID: 1098553500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_18
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1012
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ba36c60ac9ff7478bad82c9d17d799
+      internalID: 206551740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_19
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 1012
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4e80cacd63e3f4fb76779d4f96b830
+      internalID: -965555304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_20
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 1012
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b88dd999ed23a642b124d4455f37108
+      internalID: -566296746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_21
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 1012
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b4bbffd2f9cd574e9dc63ac5e4676b3
+      internalID: -291075498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_22
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1012
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0205488b9c1e3cf49ad4f9ff05229ab6
+      internalID: 994550044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_23
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1012
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d75eb676c3aa74cb54f0ccfca9e0aa
+      internalID: -996870485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_24
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1012
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e418cf1ae1029e4dbfbd4c8b4c1f6c7
+      internalID: 1793291128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_25
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 1012
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b311a1ec4ebc6bf44a5bd766090814d0
+      internalID: 512839599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_26
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1012
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 257b7842d90e5e34891ed31ae57c9d7b
+      internalID: -338957335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_27
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 930
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bac6f55e460d634dbe17622f3d77c82
+      internalID: 1013070870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_28
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 930
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cba36c02bc76724891ba30cc35f1f74
+      internalID: -955453931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_29
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 930
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd05430cabcbd7440adea27fa83da982
+      internalID: 1574148689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_30
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 930
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abaacc634c5b9e148ac761bca75eed63
+      internalID: -1242855196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_31
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 930
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c97dae71c8ccb14d83bc99f5b1aa2a7
+      internalID: 2101322829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_32
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 930
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 211ea61a4cf57894c9fb3029af85efde
+      internalID: 242858680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_33
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 930
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db99bbb1ecf3fa846ad33c32fc56ecc6
+      internalID: -278011610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_34
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 930
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a0c3e25d1119114f9c436a0b37d85ea
+      internalID: 1296181552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_35
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 930
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e68204e2dbafbe249b2d51e6046f0802
+      internalID: -1343812514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_36
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 848
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b3f877c9dde759419e504ac41bb7589
+      internalID: 56019601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_37
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 848
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 670ef3dfd4eac5a439b3907467980a4b
+      internalID: 420605250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_38
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 848
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a1d4fed83212cc4f98ff70f01f0578a
+      internalID: 1522199688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_39
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 848
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b651238c5e4b30c47b8572f4c790a153
+      internalID: 745408077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_40
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 848
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ed57016a3537a4a83f88b3fc8a3df3
+      internalID: -152657735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_41
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 848
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd0bd17b89900a6489fd994544199872
+      internalID: -1264943883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_42
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 848
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f031f3dc2da7b4d892723828fdec47
+      internalID: -1022155802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_43
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 848
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e80aea2cb0961a44a9b694264a169522
+      internalID: 1421105411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_44
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 848
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e676be0e89e081a4ab3851d64f5c2b0b
+      internalID: -453531544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_45
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 766
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 810fcaf0dfb927f4bbd8dd793bd985aa
+      internalID: 872736321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_46
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 766
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66ea22c040d187445a74b73b0d6398d6
+      internalID: 684677259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_47
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 766
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afa46f78cf553ea49b51a4be8ff080bc
+      internalID: 1268038779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_48
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 766
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bdc3f37e52dde141b7b6c585e7122b0
+      internalID: -148050479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_49
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 766
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 518142326326d1c43a46a32afed806c1
+      internalID: 1656968599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_50
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 766
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7088a33bbbf2e5c44b1b935b158d2987
+      internalID: -557476331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_51
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 766
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 786508d5a5d1c314d8342a7f675ec110
+      internalID: -2051814026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_52
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 766
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6b9665dff9cfe54f9be7ba14e6c150e
+      internalID: -2075956150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_53
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 766
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a778010ec5f1c24890fd7d2362be9ff
+      internalID: -785563684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_54
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 684
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad3ed387278174a4fb15d28a41c1f282
+      internalID: -1221779641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_55
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 684
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a42861065cff1b4c97c77aa30925cc5
+      internalID: -916343214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_56
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 684
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f6d30cd19acf864782a30c74dc3f421
+      internalID: -61741293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_57
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 684
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aea42ef0e5e5484699c2d48205ee2f2
+      internalID: -795265980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_58
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 684
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e181a9a06d7dda409cc2f5a1f1b203c
+      internalID: 1269344673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_59
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 684
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0bcc8cec52df2c47a02fbb389c97fd2
+      internalID: -1614092356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_60
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 684
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c7a87ecf65d7584dbe4c0bf6303948c
+      internalID: -187139405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_61
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 684
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc74745f79f03e344afc1365bed6c503
+      internalID: -2118577404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_62
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 684
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a4d6b2cc7e159479a8ccd80b445b89
+      internalID: 273116437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_63
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 602
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1bf1abc3ec63e94caf1374db532b842
+      internalID: -1952708937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_64
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 602
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ff6829ebfd836428f4a708d5c1c950
+      internalID: -1076487930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_65
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 602
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 065ddf978e08fe1448eab78abf0697ba
+      internalID: -1428917241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_66
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 602
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e66380adf2bf23d478a1565e1fcb2e81
+      internalID: 413099531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_67
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 602
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48f3c6f2ef9f6744f9ddd83e0e9fcc36
+      internalID: 1619652825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_68
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 602
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b57b99cc5a320240b43d3e3d2967103
+      internalID: 1639820284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_69
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 602
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df2f7dea3218a3b4aa1e31d1f1d87b87
+      internalID: -1899007577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_70
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 602
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dac2337024ebd844be2e572d72791f3
+      internalID: 1327127895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_71
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 602
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a14e609dec99f104194fcf7cb03c7ee9
+      internalID: 487058642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_72
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 520
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b43a6f00e171f6a4a85fe52a31a06c88
+      internalID: 123073976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_73
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 520
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4397b40eaeb9c39439b315ba05da6018
+      internalID: 1194090737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_74
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 520
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc17bec88563c640ba38480480e0370
+      internalID: 1041611087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_75
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 520
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d298ea2b4b7e44baddf615ead0974b
+      internalID: 696937797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_76
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 520
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a20d2fd5224bba745ab69742f0a95330
+      internalID: 1038474222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_77
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 520
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 345de893ae3dbe94ab79949be17dfbc5
+      internalID: -1364348695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_78
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 520
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 389ac3113aa81d94dba9c2e608716808
+      internalID: 1563502197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_79
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 520
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8c2de42809324f4490cd55cbeff7d7d
+      internalID: -1738686021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_80
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 520
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94a58d137444cf4f9d033ad99087e89
+      internalID: 1092843498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_81
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 438
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b6af1fa9bd06794b841e31977253b7f
+      internalID: -1891789223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_82
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 438
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d5f109099d4724d8cb194ba8fc4f10
+      internalID: -1786888296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_83
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 438
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9529bdd6efe3db54793db56253c4c026
+      internalID: 2132100285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_84
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 438
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e983c7e6a74e047b440691e93b5a05
+      internalID: 1841454621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_85
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 438
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec96d41816e215488541303fa355c31
+      internalID: -1082078465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_86
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 438
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddcb99c129486b744a2b4d9a4bbdc987
+      internalID: -879677253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_87
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 438
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de1049f29d24744449b1bdff2d758d04
+      internalID: -1704696218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_88
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 438
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18a1789e549d7264cb1a306662c211d7
+      internalID: 2590242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_89
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 438
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a61784113e13145af60e19b8067733
+      internalID: -921909200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_90
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 356
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd2660a758fda014a84a996116acbeb5
+      internalID: -1035760910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_91
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 356
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6604b4289a0779749ab94c1ece5f581d
+      internalID: -301435226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_92
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 356
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f49a3ac41e829ca49a0447779f1781c4
+      internalID: -1841996978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_93
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 356
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f22f17ad4266c8b4abd1a150c6a5b850
+      internalID: -1618465215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_94
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 356
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74de4b4c58af0ae4e9655be59e74312b
+      internalID: 1252447313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_95
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 356
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e561bdafec12e754cac3f2feffe60571
+      internalID: 389348107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_96
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 356
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30a308ac12b58084cbc635fb64699cfb
+      internalID: 294650508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_97
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 356
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac7ad7284776edf4689ffe9d8f6861d3
+      internalID: 704817952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_98
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 274
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916ec43fad379684e99aa0d4f8e99428
+      internalID: -931272154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_99
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 274
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e9f619f6d7a27b4ea9e5e282a46e29c
+      internalID: -1800384526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_100
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 274
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d156b3ac2f04d46b27dbfae76c6059
+      internalID: 993791298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_101
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 274
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea423b954bffa44c839a467d122ebe8
+      internalID: -752945054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_102
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 274
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30a28e195c22f564f8d828e425314b58
+      internalID: -626044893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_103
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 274
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f9f3c373d2d4714d9e8c33e0bee231d
+      internalID: -56818997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_104
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 274
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d679c27e1983440a5191ef0a1473c9
+      internalID: 1100329683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_105
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 274
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0ece0c42b9fede44a44c6818c5aca0a
+      internalID: 537954807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_106
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 192
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32eede1077832df4ba8bf5f74d843bd1
+      internalID: -1237075637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_107
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 192
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06cbc90e94144144d8f6fe5a882af000
+      internalID: 1007678768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_108
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 192
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1156eb3ff2ea3ef4a8353a6c65471826
+      internalID: -73123562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_109
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 192
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab3b7e33c7522844ab03952fc8b99af9
+      internalID: 336793104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_110
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94942dee9a4ddab47adc578c3ba7268d
+      internalID: -1058338564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_111
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 192
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e8bbe5c350d5345a98f3277e44872d
+      internalID: -1617827468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_112
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 192
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d22af3d3bb0e6c4fb92c4ac7e73adab
+      internalID: -668926081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_113
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 192
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d52a6591d78632d48ba1342c82807a7d
+      internalID: -166647436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_114
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 110
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ba4db63f6838b42ac6dae0169befac
+      internalID: -377739810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_115
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 110
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e649b8df3be5c46affd09e780defd8
+      internalID: -2033294675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_116
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 110
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 342a0c4f0d3dbb5499d0eb2ff0d65c54
+      internalID: -173718875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland tilemap 2-01_117
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 110
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e76449f61fff19e43a12d92d82cf84b3
+      internalID: 1274823616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4ad79467f690eab499992f19de441385
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Paraboland tilemap 2-01_0: 5743887182734680204
+      Paraboland tilemap 2-01_1: 843434881888895056
+      Paraboland tilemap 2-01_10: -32021615
+      Paraboland tilemap 2-01_100: 993791298
+      Paraboland tilemap 2-01_101: -752945054
+      Paraboland tilemap 2-01_102: -626044893
+      Paraboland tilemap 2-01_103: -56818997
+      Paraboland tilemap 2-01_104: 1100329683
+      Paraboland tilemap 2-01_105: 537954807
+      Paraboland tilemap 2-01_106: -1237075637
+      Paraboland tilemap 2-01_107: 1007678768
+      Paraboland tilemap 2-01_108: -73123562
+      Paraboland tilemap 2-01_109: 336793104
+      Paraboland tilemap 2-01_11: 185946868
+      Paraboland tilemap 2-01_110: -1058338564
+      Paraboland tilemap 2-01_111: -1617827468
+      Paraboland tilemap 2-01_112: -668926081
+      Paraboland tilemap 2-01_113: -166647436
+      Paraboland tilemap 2-01_114: -377739810
+      Paraboland tilemap 2-01_115: -2033294675
+      Paraboland tilemap 2-01_116: -173718875
+      Paraboland tilemap 2-01_117: 1274823616
+      Paraboland tilemap 2-01_12: -2083884051
+      Paraboland tilemap 2-01_13: -649776869
+      Paraboland tilemap 2-01_14: 1005342295
+      Paraboland tilemap 2-01_15: -598923634
+      Paraboland tilemap 2-01_16: 833520516
+      Paraboland tilemap 2-01_17: 1098553500
+      Paraboland tilemap 2-01_18: 206551740
+      Paraboland tilemap 2-01_19: -965555304
+      Paraboland tilemap 2-01_2: 7863749515624110404
+      Paraboland tilemap 2-01_20: -566296746
+      Paraboland tilemap 2-01_21: -291075498
+      Paraboland tilemap 2-01_22: 994550044
+      Paraboland tilemap 2-01_23: -996870485
+      Paraboland tilemap 2-01_24: 1793291128
+      Paraboland tilemap 2-01_25: 512839599
+      Paraboland tilemap 2-01_26: -338957335
+      Paraboland tilemap 2-01_27: 1013070870
+      Paraboland tilemap 2-01_28: -955453931
+      Paraboland tilemap 2-01_29: 1574148689
+      Paraboland tilemap 2-01_3: -6092896446910288812
+      Paraboland tilemap 2-01_30: -1242855196
+      Paraboland tilemap 2-01_31: 2101322829
+      Paraboland tilemap 2-01_32: 242858680
+      Paraboland tilemap 2-01_33: -278011610
+      Paraboland tilemap 2-01_34: 1296181552
+      Paraboland tilemap 2-01_35: -1343812514
+      Paraboland tilemap 2-01_36: 56019601
+      Paraboland tilemap 2-01_37: 420605250
+      Paraboland tilemap 2-01_38: 1522199688
+      Paraboland tilemap 2-01_39: 745408077
+      Paraboland tilemap 2-01_4: -8024505356764832532
+      Paraboland tilemap 2-01_40: -152657735
+      Paraboland tilemap 2-01_41: -1264943883
+      Paraboland tilemap 2-01_42: -1022155802
+      Paraboland tilemap 2-01_43: 1421105411
+      Paraboland tilemap 2-01_44: -453531544
+      Paraboland tilemap 2-01_45: 872736321
+      Paraboland tilemap 2-01_46: 684677259
+      Paraboland tilemap 2-01_47: 1268038779
+      Paraboland tilemap 2-01_48: -148050479
+      Paraboland tilemap 2-01_49: 1656968599
+      Paraboland tilemap 2-01_5: -2240450504813220299
+      Paraboland tilemap 2-01_50: -557476331
+      Paraboland tilemap 2-01_51: -2051814026
+      Paraboland tilemap 2-01_52: -2075956150
+      Paraboland tilemap 2-01_53: -785563684
+      Paraboland tilemap 2-01_54: -1221779641
+      Paraboland tilemap 2-01_55: -916343214
+      Paraboland tilemap 2-01_56: -61741293
+      Paraboland tilemap 2-01_57: -795265980
+      Paraboland tilemap 2-01_58: 1269344673
+      Paraboland tilemap 2-01_59: -1614092356
+      Paraboland tilemap 2-01_6: -5028510190305935927
+      Paraboland tilemap 2-01_60: -187139405
+      Paraboland tilemap 2-01_61: -2118577404
+      Paraboland tilemap 2-01_62: 273116437
+      Paraboland tilemap 2-01_63: -1952708937
+      Paraboland tilemap 2-01_64: -1076487930
+      Paraboland tilemap 2-01_65: -1428917241
+      Paraboland tilemap 2-01_66: 413099531
+      Paraboland tilemap 2-01_67: 1619652825
+      Paraboland tilemap 2-01_68: 1639820284
+      Paraboland tilemap 2-01_69: -1899007577
+      Paraboland tilemap 2-01_7: -2016111425863823561
+      Paraboland tilemap 2-01_70: 1327127895
+      Paraboland tilemap 2-01_71: 487058642
+      Paraboland tilemap 2-01_72: 123073976
+      Paraboland tilemap 2-01_73: 1194090737
+      Paraboland tilemap 2-01_74: 1041611087
+      Paraboland tilemap 2-01_75: 696937797
+      Paraboland tilemap 2-01_76: 1038474222
+      Paraboland tilemap 2-01_77: -1364348695
+      Paraboland tilemap 2-01_78: 1563502197
+      Paraboland tilemap 2-01_79: -1738686021
+      Paraboland tilemap 2-01_8: -250636313420589392
+      Paraboland tilemap 2-01_80: 1092843498
+      Paraboland tilemap 2-01_81: -1891789223
+      Paraboland tilemap 2-01_82: -1786888296
+      Paraboland tilemap 2-01_83: 2132100285
+      Paraboland tilemap 2-01_84: 1841454621
+      Paraboland tilemap 2-01_85: -1082078465
+      Paraboland tilemap 2-01_86: -879677253
+      Paraboland tilemap 2-01_87: -1704696218
+      Paraboland tilemap 2-01_88: 2590242
+      Paraboland tilemap 2-01_89: -921909200
+      Paraboland tilemap 2-01_9: 1875086925
+      Paraboland tilemap 2-01_90: -1035760910
+      Paraboland tilemap 2-01_91: -301435226
+      Paraboland tilemap 2-01_92: -1841996978
+      Paraboland tilemap 2-01_93: -1618465215
+      Paraboland tilemap 2-01_94: 1252447313
+      Paraboland tilemap 2-01_95: 389348107
+      Paraboland tilemap 2-01_96: 294650508
+      Paraboland tilemap 2-01_97: 704817952
+      Paraboland tilemap 2-01_98: -931272154
+      Paraboland tilemap 2-01_99: -1800384526
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

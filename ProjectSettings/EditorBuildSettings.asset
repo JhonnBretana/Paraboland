@@ -42,7 +42,7 @@ EditorBuildSettings:
     path: Assets/Scenes/draft/Chapt1_Easy.unity
     guid: aa7dd72fbd99dec43aab26587a1f8a5b
   - enabled: 0
-    path: Assets/Scenes/Map2/Chapt2_Easy.unity
+    path: Assets/Scenes/Map2/Chapter2.unity
     guid: ce2373a99a1a53b4ca281034235459f5
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
