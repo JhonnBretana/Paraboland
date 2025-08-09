@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/ChapterSelection.unity
     guid: 34a7076c8942238418775c84d72af175
   - enabled: 1
-    path: Assets/Scenes/Map1/Chapt1_Easy.unity
+    path: Assets/Scenes/draft/Chapt1_Easy.unity
     guid: aa7dd72fbd99dec43aab26587a1f8a5b
   - enabled: 1
     path: Assets/Scenes/LandingPage.unity
@@ -36,7 +36,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Map1/Chapter1.unity
     guid: f27442a1aea05424385d4efc926901ce
   - enabled: 1
-    path: Assets/Component/BattleSceneComponent/BattleScene.unity
+    path: Assets/Scenes/Questions/Chapter 1/Easy Question 1.unity
     guid: 5b7e702b2f4facd438cfec2cf4576535
   - enabled: 0
     path: Assets/Scenes/draft/Chapt1_Easy.unity
