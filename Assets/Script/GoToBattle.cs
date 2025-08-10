@@ -31,6 +31,10 @@ public class GoToBattle : MonoBehaviour
     public float fadeToBlack = 0.45f;
     public float fadeFromBlack = 0.45f;
 
+    [Header("Question Data")]
+    public int chapter = 1; // 1 to 5, set in Inspector
+    public string difficulty = "Easy"; // "Easy", "Average", "Difficult", set in Inspector
+
     private bool isLoading;
 
     void Reset()
@@ -47,6 +51,8 @@ public class GoToBattle : MonoBehaviour
 
         isLoading = true;
         PlayerPrefs.SetInt("CurrentQuestionIndex", questionIndex);
+        PlayerPrefs.SetInt("CurrentChapter", chapter);
+        PlayerPrefs.SetString("CurrentDifficulty", difficulty);
 
         // prevent re-entry while loading
         var col = GetComponent<Collider2D>();

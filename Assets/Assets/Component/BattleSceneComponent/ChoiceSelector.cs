@@ -22,19 +22,153 @@ public class ChoiceSelector : MonoBehaviour
     void Start()
     {
         int questionIndex = PlayerPrefs.GetInt("CurrentQuestionIndex", 0);
-        questionText.text = Chapter1Questions.Easy[questionIndex];
+        int chapter = PlayerPrefs.GetInt("CurrentChapter", 1);
+        string difficulty = PlayerPrefs.GetString("CurrentDifficulty", "Easy");
+
+        string[] questions = null;
+        string[,] choices = null;
+        int[] answers = null;
+
+        switch (chapter)
+        {
+            case 1:
+                switch (difficulty)
+                {
+                    case "Easy":
+                        questions = Chapter1Questions.Easy;
+                        choices = Chapter1Choices.Easy;
+                        answers = Chapter1Answers.Easy;
+                        break;
+                    case "Average":
+                        questions = Chapter1Questions.Average;
+                        choices = Chapter1Choices.Average;
+                        answers = Chapter1Answers.Average;
+                        break;
+                    case "Difficult":
+                        questions = Chapter1Questions.Difficult;
+                        choices = Chapter1Choices.Difficult;
+                        answers = Chapter1Answers.Difficult;
+                        break;
+                    default:
+                        questions = Chapter1Questions.Easy;
+                        choices = Chapter1Choices.Easy;
+                        answers = Chapter1Answers.Easy;
+                        break;
+                }
+                break;
+            case 2:
+                switch (difficulty)
+                {
+                    case "Easy":
+                        questions = Chapter2Questions.Easy;
+                        choices = Chapter2Choices.Easy;
+                        answers = Chapter2Answers.Easy;
+                        break;
+                    case "Average":
+                        questions = Chapter2Questions.Average;
+                        choices = Chapter2Choices.Average;
+                        answers = Chapter2Answers.Average;
+                        break;
+                    case "Difficult":
+                        questions = Chapter2Questions.Difficult;
+                        choices = Chapter2Choices.Difficult;
+                        answers = Chapter2Answers.Difficult;
+                        break;
+                    default:
+                        questions = Chapter2Questions.Easy;
+                        choices = Chapter2Choices.Easy;
+                        answers = Chapter2Answers.Easy;
+                        break;
+                }
+                break;
+            case 3:
+                switch (difficulty)
+                {
+                    case "Easy":
+                        questions = Chapter3Questions.Easy;
+                        choices = Chapter3Choices.Easy;
+                        answers = Chapter3Answers.Easy;
+                        break;
+                    case "Average":
+                        questions = Chapter3Questions.Average;
+                        choices = Chapter3Choices.Average;
+                        answers = Chapter3Answers.Average;
+                        break;
+                    case "Difficult":
+                        questions = Chapter3Questions.Difficult;
+                        choices = Chapter3Choices.Difficult;
+                        answers = Chapter3Answers.Difficult;
+                        break;
+                    default:
+                        questions = Chapter3Questions.Easy;
+                        choices = Chapter3Choices.Easy;
+                        answers = Chapter3Answers.Easy;
+                        break;
+                }
+                break;
+            case 4:
+                switch (difficulty)
+                {
+                    case "Easy":
+                        questions = Chapter4Questions.Easy;
+                        choices = Chapter4Choices.Easy;
+                        answers = Chapter4Answers.Easy;
+                        break;
+                    case "Average":
+                        questions = Chapter4Questions.Average;
+                        choices = Chapter4Choices.Average;
+                        answers = Chapter4Answers.Average;
+                        break;
+                    case "Difficult":
+                        questions = Chapter4Questions.Difficult;
+                        choices = Chapter4Choices.Difficult;
+                        answers = Chapter4Answers.Difficult;
+                        break;
+                    default:
+                        questions = Chapter4Questions.Easy;
+                        choices = Chapter4Choices.Easy;
+                        answers = Chapter4Answers.Easy;
+                        break;
+                }
+                break;
+            case 5:
+                switch (difficulty)
+                {
+                    case "Easy":
+                        questions = Chapter5Questions.Easy;
+                        choices = Chapter5Choices.Easy;
+                        answers = Chapter5Answers.Easy;
+                        break;
+                    case "Average":
+                        questions = Chapter5Questions.Average;
+                        choices = Chapter5Choices.Average;
+                        answers = Chapter5Answers.Average;
+                        break;
+                    case "Difficult":
+                        questions = Chapter5Questions.Difficult;
+                        choices = Chapter5Choices.Difficult;
+                        answers = Chapter5Answers.Difficult;
+                        break;
+                    default:
+                        questions = Chapter5Questions.Easy;
+                        choices = Chapter5Choices.Easy;
+                        answers = Chapter5Answers.Easy;
+                        break;
+                }
+                break;
+        }
+
+        questionText.text = questions[questionIndex];
         for (int i = 0; i < choiceButtons.Length; i++)
         {
-            // Use TMP_Text for button label
             TMP_Text btnText = choiceButtons[i].GetComponentInChildren<TMP_Text>();
             if (btnText != null)
-                btnText.text = Chapter1Choices.Easy[questionIndex, i];
+                btnText.text = choices[questionIndex, i];
         }
-        correctAnswerIndex = Chapter1Answers.Easy[questionIndex];
+        correctAnswerIndex = answers[questionIndex];
 
         ShowDialog();
 
-        // HighlightChoice(); // Remove this line
         if (resultModalWin != null) resultModalWin.SetActive(false);
         if (resultModalLost != null) resultModalLost.SetActive(false);
         if (confirmationDialog != null) confirmationDialog.SetActive(false);
@@ -50,7 +184,6 @@ public class ChoiceSelector : MonoBehaviour
         if ((resultModalWin != null && resultModalWin.activeSelf) ||
             (resultModalLost != null && resultModalLost.activeSelf))
         {
-            // UnhighlightAllChoices(); // Remove this line
             SetObjectsToHideActive(false);
             return;
         }
@@ -86,9 +219,7 @@ public class ChoiceSelector : MonoBehaviour
         if (resultModalLost != null) resultModalLost.SetActive(false);
         SetObjectsToHideActive(true);
         selectedIndex = 0;
-        // HighlightChoice(); // Remove this line
     }
-
 
     // Called when a choice is tapped
     void OnChoiceTapped(int index)
@@ -104,7 +235,6 @@ public class ChoiceSelector : MonoBehaviour
         if (pendingIndex >= 0)
         {
             selectedIndex = pendingIndex;
-            // HighlightChoice(); // Remove this line
             if (confirmationDialog != null)
                 confirmationDialog.SetActive(false);
 
