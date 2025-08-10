@@ -1,19 +1,34 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.UI; // optional (only if you assign the button to lock clicks)
 
 public class MapSelector : MonoBehaviour
 {
-    public SwipeSnap swipeSnap;           // Drag your CarouselManager here
-    public string[] sceneNames;           // Set up in Inspector
+    [Header("Inputs")]
+    public SwipeSnap swipeSnap;       // drag your carousel/SwipeSnap here
+    public string[] sceneNames;       // names match the carousel order
+
+    [Header("Transition (seconds)")]
+    public float fadeToBlack = 0.45f;
+    public float fadeFromBlack = 0.45f;
+
+    [Header("Optional")]
+    public Button selectButton;       // assign to prevent double taps
+
+    bool isLoading;
 
     public void OnSelectMap()
     {
-        int index = swipeSnap.currentIndex;
+        if (isLoading) return;
 
-        if (index >= 0 && index < sceneNames.Length)
+        int index = (swipeSnap != null) ? swipeSnap.currentIndex : -1;
+        if (index >= 0 && index < sceneNames.Length && !string.IsNullOrEmpty(sceneNames[index]))
         {
-            Debug.Log("Loading scene: " + sceneNames[index]);
-            SceneManager.LoadScene(sceneNames[index]);
+            isLoading = true;
+            if (selectButton) selectButton.interactable = false;
+
+            string scene = sceneNames[index];
+            Debug.Log($"Transition → {scene}");
+            TransitionManager.I.LoadSceneWithTransition(scene, fadeToBlack, fadeFromBlack);
         }
         else
         {
