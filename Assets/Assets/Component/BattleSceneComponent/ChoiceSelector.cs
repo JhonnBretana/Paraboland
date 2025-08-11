@@ -193,12 +193,24 @@ public class ChoiceSelector : MonoBehaviour
     {
         if (index == correctAnswerIndex)
         {
+            SaveCorrectAnswer();
             if (resultModalWin != null) resultModalWin.SetActive(true);
         }
         else
         {
             if (resultModalLost != null) resultModalLost.SetActive(true);
         }
+    }
+
+    void SaveCorrectAnswer()
+    {
+        int chapter = PlayerPrefs.GetInt("CurrentChapter", 1);
+        string difficulty = PlayerPrefs.GetString("CurrentDifficulty", "Easy");
+        int questionIndex = PlayerPrefs.GetInt("CurrentQuestionIndex", 0);
+
+        string key = $"Chapter{chapter}_{difficulty}_Q{questionIndex}_Correct";
+        PlayerPrefs.SetInt(key, 1); // 1 = correct
+        PlayerPrefs.Save();
     }
 
     public void SetObjectsToHideActive(bool isActive)

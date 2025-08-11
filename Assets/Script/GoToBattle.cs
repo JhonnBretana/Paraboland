@@ -54,18 +54,19 @@ public class GoToBattle : MonoBehaviour
         PlayerPrefs.SetInt("CurrentChapter", chapter);
         PlayerPrefs.SetString("CurrentDifficulty", difficulty);
 
+        // Store the current scene name as the previous map
+        PlayerPrefs.SetString("PreviousMapScene", UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+
         // prevent re-entry while loading
         var col = GetComponent<Collider2D>();
         if (col) col.enabled = false;
 
-        // Use your TransitionManager (must be present in a scene and have screenTransitionPrefab assigned)
         if (TransitionManager.I != null)
         {
             TransitionManager.I.LoadSceneWithTransition(sceneToLoad, fadeToBlack, fadeFromBlack);
         }
         else
         {
-            // Fallback: direct load if TransitionManager wasn't placed in the scene
             SceneManager.LoadScene(sceneToLoad);
         }
     }

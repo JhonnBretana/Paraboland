@@ -18,4 +18,17 @@ public class SceneTransition : MonoBehaviour
             Debug.LogWarning("Scene name not set in the Inspector!");
         }
     }
+
+    public void GoBackToPreviousMap()
+    {
+        string previousMap = PlayerPrefs.GetString("PreviousMapScene", "");
+        if (!string.IsNullOrEmpty(previousMap))
+        {
+            SceneManager.LoadScene(previousMap);
+        }
+        else
+        {
+            Debug.LogWarning("No previous map scene stored!");
+        }
+    }
 }
