@@ -40,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -54,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -78,7 +78,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -132,10 +132,10 @@ TextureImporter:
       name: Paraboland Maps_chap3-02_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 285
-        width: 55
-        height: 55
+        x: 32
+        y: 649
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,10 +154,10 @@ TextureImporter:
       name: Paraboland Maps_chap3-02_1
       rect:
         serializedVersion: 2
-        x: 79
-        y: 167
-        width: 403
-        height: 495
+        x: 82
+        y: 649
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,11 +172,2145 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_2
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 649
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c14d77ae4e823f24e998c8094b8f003e
+      internalID: -446188982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_3
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 649
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9692b1dd1c4090644932a9f6d8c4d811
+      internalID: -358531875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_4
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 649
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c3659842ffa71e41a099e652175003a
+      internalID: -904828832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_5
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 649
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea79fb7a3de930b4d8b16dcdab56679e
+      internalID: -1986957722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_6
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 649
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98f5770a8910c7a44874ac2433855440
+      internalID: -1135067622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_7
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 649
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f88708788bf9a64086df9bdfef5b4b1
+      internalID: -1414904434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_8
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 649
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 079d93b70d5b7d044a4e81af3dad117e
+      internalID: -856776025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 599
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa46a8c896db154cb78173669619d04
+      internalID: -1418394890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_10
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 599
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e78259be5aae814aa216cee34a434a8
+      internalID: 1040569233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_11
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 599
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff1162e52495d5449a34cb1a76fe37f
+      internalID: 1174061741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_12
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 599
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e59a980624b62f047a910c49f523f49b
+      internalID: 1680796456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_13
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 599
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8e033c8f75e9bf40b7f38e73b6b9bd0
+      internalID: -11355802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_14
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 599
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df70c80c6f75fe04aacb315c8abee37d
+      internalID: 11899165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_15
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 599
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd9edd85b6e07a45937c82ff6bf877c
+      internalID: -2085303299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_16
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 599
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afcc5ba0f54458e4a9324e7468dc5fb6
+      internalID: -1672057871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_17
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 599
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49d26e8406e498743a938f6370d77d5d
+      internalID: -960589748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_18
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 549
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2939d7994fcb9f54f9667e80d4fdb891
+      internalID: -1015496184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_19
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 549
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71cd1356ba88f47419976f52db3b1774
+      internalID: -980424352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_20
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 549
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5452f06959283aa4b9c668d2b9149c15
+      internalID: -879445368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_21
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 549
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01eb7f7c32d5e4b458bb41fb25d8a808
+      internalID: -1174733192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_22
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 549
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93675e3a398cd784297418969142b9b3
+      internalID: 1175733733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_23
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 549
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1750176f742f61349a4ab308d024eca4
+      internalID: 103122258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_24
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 549
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee49ffe359b256246bd5de4f1e7dbd17
+      internalID: 1954900796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_25
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 549
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57d3798d050482c4fa1e21485bb3b329
+      internalID: -209909201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_26
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 549
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df0c7a28960d05341abf4dc317bdef55
+      internalID: 1750577772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_27
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 499
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283886f98518b644f912eb77ac61a6b3
+      internalID: 201590219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_28
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 499
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96a720df9fb97a64288d591125d82ba7
+      internalID: -2706188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_29
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 499
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05227f7c180b495448fe2d5d124840c5
+      internalID: -34090204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_30
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 499
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb22fd4f6fd89544e8d8101be34bf08f
+      internalID: 2056267901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_31
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 499
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20953941bc45d73499817eb7adfd4fed
+      internalID: -754955410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_32
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 499
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 115481187cfa396469985fcfa6d27fed
+      internalID: 658433310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_33
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 499
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6f35e6e96d62b2438e5e96545ede816
+      internalID: 2085718884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_34
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 499
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a9c056ed028eb4c9a534610bb5678c
+      internalID: -1099084160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_35
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 499
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37aa5ded8b9cd25489537d226bb68c83
+      internalID: -1840002359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_36
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 449
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee1b9e8566405c144820a1b565e6582e
+      internalID: 859150322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_37
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 449
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc2351c969d1cf49b04b91a45435ea2
+      internalID: -1141098818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_38
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 449
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e166f10ebec848c4c8e4d568cff7a8a0
+      internalID: 1875125949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_39
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 449
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bac6bc7b472e844a942f39f9807dfb6
+      internalID: 2097921024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_40
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 449
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1184c007388b0fb4cbc9947fde1af5ca
+      internalID: 1159200863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_41
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 449
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1abfb922b3fca544a9c3f437db78ec7b
+      internalID: 190090889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_42
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 449
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b615e3b39da1af47b8b854b3a6c7da1
+      internalID: 1539089312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_43
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 449
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c5f1952cd0131439c74866af382718
+      internalID: 1122257011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_44
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 449
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d900c44042867f94b9c718e09a39dd34
+      internalID: 1001873811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_45
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 399
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a5f99642becce54cb0eced81209710d
+      internalID: -1977617153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_46
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 399
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b10f50c13c215c1499d152ab4b708ad5
+      internalID: 1594241349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_47
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 399
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 834ec38815b11db418bfe80efd0b6dcf
+      internalID: 1394044091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_48
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 399
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92c2463882b83aa4eb64cbad91acaad8
+      internalID: -1121143838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_49
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 399
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e87cb18f67e23444585749ab3f32b1d1
+      internalID: -939521678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_50
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 399
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02410358ac91841418efbfff9bc5bf5f
+      internalID: 1492695742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_51
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 399
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f588b52240d6e994ba7872ef46b08f2a
+      internalID: 1155768612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_52
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 399
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca4ee04c6d3282b4492bbf58a647768a
+      internalID: -926305260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_53
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 399
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e612b86916db94ab068e9afa346881
+      internalID: 1782627004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_54
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 349
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5f26faa99e569d4dbf7061a544eedba
+      internalID: -1315930820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_55
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 349
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49e5e443fdc865c48b89362c64e4f6e4
+      internalID: -382788419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_56
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 349
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8048e01116be13446a1e86a6aace5334
+      internalID: -700951267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_57
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 349
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5892353f76e894468dd92810f7c86c3
+      internalID: -1972893773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_58
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 349
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7dd4081c3c3c6145965c7466d23d6a5
+      internalID: -2113936457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_59
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 349
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37ee6cabefecfba438335f0ae8d0f0d5
+      internalID: -27480560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_60
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 349
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ea11250ce14c24c98bb430ec359338
+      internalID: -617023982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_61
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 349
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 608751ba62679ea4782124108e443a94
+      internalID: -507640853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_62
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 349
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db8ecd1639b4dea458a9c648e80372a6
+      internalID: -2029049899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_63
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 299
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a1a16981be3d947b12b6289541dc7a
+      internalID: 539245099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_64
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 299
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd038d7152015a4593800f9b27113fc
+      internalID: -1610827317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_65
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 299
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7488437475af06947a524c3fb3a3e02f
+      internalID: 1558706308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_66
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 299
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68140eab038a99a4c86a8b3550c98232
+      internalID: -61952153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_67
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 299
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab0c10eddf9967a4b8d23979f482e8fb
+      internalID: -1284506905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_68
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 299
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af74a35de9cf1e46b1f58229bd25bad
+      internalID: -532675011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_69
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 299
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66529cf2ff10d5744afbb8e27bb280a6
+      internalID: 116720722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_70
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 299
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76ebdfb5d4f78dc4f9648e67f5750151
+      internalID: -1464883534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_71
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 299
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73c22f0d57bb5eb45a4b1e3fd1a09de3
+      internalID: -1079475398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_72
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 249
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5615cbe561681e144a1e068410c004de
+      internalID: -1461189854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_73
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 249
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba2d5e0481695db4599fe8f86d4e547e
+      internalID: -249479280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_74
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 249
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d43e2fef1b4cb4cb57a7d368d1ad6b
+      internalID: -903320185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_75
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 249
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb1b866caac3ba4c9bb493f11683035
+      internalID: -1260663966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_76
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 249
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b864c0f28f5184fb647bad49bc1e7d
+      internalID: 341982845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_77
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 249
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c394156ea7b3db4689708b5340187b2
+      internalID: -1966835733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_78
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 249
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdccd6ecb0c837846981b53cc650a73e
+      internalID: -1222788474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_79
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 249
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c362d712916b840a3782ed89309d92
+      internalID: 952590782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_80
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 249
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f2f05aa27c6404aa3d9c251b1b83f8
+      internalID: -1249335274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_81
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 199
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad10eff2d9973a40b1a87e659eaefea
+      internalID: -1947443845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_82
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 199
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7982addc80c742241a5c5e3701434eb4
+      internalID: 395070910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_83
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 199
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9d74378f6cf8b46ae613f6b7be7cd3
+      internalID: -1970414515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_84
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 199
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 039d496415374fb42acbc28bc9f8b5c7
+      internalID: -671937697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_85
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 199
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b47fb66564fb054596b454f39ffd719
+      internalID: 1514674923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_86
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 199
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80817e1937cd1df4ab35c477ea6f9745
+      internalID: 1687244815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_87
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 199
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5871b652c0add641a2b44a048b54346
+      internalID: 660037052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_88
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 199
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db6203295e8bc874d997c55ba5090f9e
+      internalID: -481670713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_89
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 199
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c3592617d99d9040b7c9b68f84f014c
+      internalID: -1331097910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_90
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 149
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d18d9eebeaadb439ad6c9c0f356916
+      internalID: -733209915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_91
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 149
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b10eb29154d30b43ad2b0adf317a94b
+      internalID: -2029556289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_92
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 149
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc0e1998574e58e43a13af9352886e03
+      internalID: -1470527688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_93
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 149
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfb86786e26949849aa02a6ab808885f
+      internalID: -610623249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_94
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 149
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d25a1a09ee1224b8c8664e85843419
+      internalID: 871810528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_95
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 149
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fec22a7d95737d547bcdd72307e1f3ad
+      internalID: -1391389263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_96
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 149
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a952844ddeffef44b72fc4134f6d18b
+      internalID: 857972717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_97
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 149
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d2b4592d86d43a4890848e689b2c029
+      internalID: 1070957178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraboland Maps_chap3-02_98
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 149
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4647e97022c279c469a5e3eb3bcda770
+      internalID: -686124357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 765aeeae917a9aa4ea53a16e8e9c8f55
     internalID: 0
     vertices: []
     indices: 
@@ -185,7 +2319,106 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Paraboland Maps_chap3-02_0: 2129598309786913208
+      Paraboland Maps_chap3-02_1: 1033295483547097983
+      Paraboland Maps_chap3-02_10: 1040569233
+      Paraboland Maps_chap3-02_11: 1174061741
+      Paraboland Maps_chap3-02_12: 1680796456
+      Paraboland Maps_chap3-02_13: -11355802
+      Paraboland Maps_chap3-02_14: 11899165
+      Paraboland Maps_chap3-02_15: -2085303299
+      Paraboland Maps_chap3-02_16: -1672057871
+      Paraboland Maps_chap3-02_17: -960589748
+      Paraboland Maps_chap3-02_18: -1015496184
+      Paraboland Maps_chap3-02_19: -980424352
+      Paraboland Maps_chap3-02_2: -446188982
+      Paraboland Maps_chap3-02_20: -879445368
+      Paraboland Maps_chap3-02_21: -1174733192
+      Paraboland Maps_chap3-02_22: 1175733733
+      Paraboland Maps_chap3-02_23: 103122258
+      Paraboland Maps_chap3-02_24: 1954900796
+      Paraboland Maps_chap3-02_25: -209909201
+      Paraboland Maps_chap3-02_26: 1750577772
+      Paraboland Maps_chap3-02_27: 201590219
+      Paraboland Maps_chap3-02_28: -2706188
+      Paraboland Maps_chap3-02_29: -34090204
+      Paraboland Maps_chap3-02_3: -358531875
+      Paraboland Maps_chap3-02_30: 2056267901
+      Paraboland Maps_chap3-02_31: -754955410
+      Paraboland Maps_chap3-02_32: 658433310
+      Paraboland Maps_chap3-02_33: 2085718884
+      Paraboland Maps_chap3-02_34: -1099084160
+      Paraboland Maps_chap3-02_35: -1840002359
+      Paraboland Maps_chap3-02_36: 859150322
+      Paraboland Maps_chap3-02_37: -1141098818
+      Paraboland Maps_chap3-02_38: 1875125949
+      Paraboland Maps_chap3-02_39: 2097921024
+      Paraboland Maps_chap3-02_4: -904828832
+      Paraboland Maps_chap3-02_40: 1159200863
+      Paraboland Maps_chap3-02_41: 190090889
+      Paraboland Maps_chap3-02_42: 1539089312
+      Paraboland Maps_chap3-02_43: 1122257011
+      Paraboland Maps_chap3-02_44: 1001873811
+      Paraboland Maps_chap3-02_45: -1977617153
+      Paraboland Maps_chap3-02_46: 1594241349
+      Paraboland Maps_chap3-02_47: 1394044091
+      Paraboland Maps_chap3-02_48: -1121143838
+      Paraboland Maps_chap3-02_49: -939521678
+      Paraboland Maps_chap3-02_5: -1986957722
+      Paraboland Maps_chap3-02_50: 1492695742
+      Paraboland Maps_chap3-02_51: 1155768612
+      Paraboland Maps_chap3-02_52: -926305260
+      Paraboland Maps_chap3-02_53: 1782627004
+      Paraboland Maps_chap3-02_54: -1315930820
+      Paraboland Maps_chap3-02_55: -382788419
+      Paraboland Maps_chap3-02_56: -700951267
+      Paraboland Maps_chap3-02_57: -1972893773
+      Paraboland Maps_chap3-02_58: -2113936457
+      Paraboland Maps_chap3-02_59: -27480560
+      Paraboland Maps_chap3-02_6: -1135067622
+      Paraboland Maps_chap3-02_60: -617023982
+      Paraboland Maps_chap3-02_61: -507640853
+      Paraboland Maps_chap3-02_62: -2029049899
+      Paraboland Maps_chap3-02_63: 539245099
+      Paraboland Maps_chap3-02_64: -1610827317
+      Paraboland Maps_chap3-02_65: 1558706308
+      Paraboland Maps_chap3-02_66: -61952153
+      Paraboland Maps_chap3-02_67: -1284506905
+      Paraboland Maps_chap3-02_68: -532675011
+      Paraboland Maps_chap3-02_69: 116720722
+      Paraboland Maps_chap3-02_7: -1414904434
+      Paraboland Maps_chap3-02_70: -1464883534
+      Paraboland Maps_chap3-02_71: -1079475398
+      Paraboland Maps_chap3-02_72: -1461189854
+      Paraboland Maps_chap3-02_73: -249479280
+      Paraboland Maps_chap3-02_74: -903320185
+      Paraboland Maps_chap3-02_75: -1260663966
+      Paraboland Maps_chap3-02_76: 341982845
+      Paraboland Maps_chap3-02_77: -1966835733
+      Paraboland Maps_chap3-02_78: -1222788474
+      Paraboland Maps_chap3-02_79: 952590782
+      Paraboland Maps_chap3-02_8: -856776025
+      Paraboland Maps_chap3-02_80: -1249335274
+      Paraboland Maps_chap3-02_81: -1947443845
+      Paraboland Maps_chap3-02_82: 395070910
+      Paraboland Maps_chap3-02_83: -1970414515
+      Paraboland Maps_chap3-02_84: -671937697
+      Paraboland Maps_chap3-02_85: 1514674923
+      Paraboland Maps_chap3-02_86: 1687244815
+      Paraboland Maps_chap3-02_87: 660037052
+      Paraboland Maps_chap3-02_88: -481670713
+      Paraboland Maps_chap3-02_89: -1331097910
+      Paraboland Maps_chap3-02_9: -1418394890
+      Paraboland Maps_chap3-02_90: -733209915
+      Paraboland Maps_chap3-02_91: -2029556289
+      Paraboland Maps_chap3-02_92: -1470527688
+      Paraboland Maps_chap3-02_93: -610623249
+      Paraboland Maps_chap3-02_94: 871810528
+      Paraboland Maps_chap3-02_95: -1391389263
+      Paraboland Maps_chap3-02_96: 857972717
+      Paraboland Maps_chap3-02_97: 1070957178
+      Paraboland Maps_chap3-02_98: -686124357
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
