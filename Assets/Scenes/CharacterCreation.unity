@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 38594569}
   - component: {fileID: 38594568}
   - component: {fileID: 38594567}
+  - component: {fileID: 38594570}
   m_Layer: 5
   m_Name: Start
   m_TagString: Untagged
@@ -200,7 +201,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 38594568}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 38594570}
+        m_TargetAssemblyTypeName: SceneTransition, Assembly-CSharp
+        m_MethodName: TransitionToScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &38594568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -239,6 +252,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 38594565}
   m_CullTransparentMesh: 1
+--- !u!114 &38594570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38594565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f55ce6ab4ef18a2418a57e682b50c0c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: ChapterSelection
 --- !u!1 &209253652
 GameObject:
   m_ObjectHideFlags: 0
@@ -968,7 +994,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 6288530371997925523, guid: 043321110da1a0c40815b9efdac42852, type: 3}
+  m_Sprite: {fileID: -5099292496197868168, guid: e805fcdbca21eb145849470fabba145f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

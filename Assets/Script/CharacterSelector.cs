@@ -24,37 +24,18 @@ public class CharacterSelector : MonoBehaviour
     void Start()
     {
         HighlightCharacter();
-        // Set up button click event
         if (selectButton != null)
         {
             selectButton.onClick.AddListener(OnSelectCharacter);
         }
     }
 
-    void Update()
-    {
-        HandleInput();
-    }
+    // Remove keyboard input, selection is now by tap/click only
 
-    void HandleInput()
+    // Call this from each character's OnMouseDown or via an EventTrigger
+    public void OnCharacterTapped(int index)
     {
-        // Left arrow or A key
-        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
-        {
-            selectedIndex = (selectedIndex - 1 + characterSprites.Length) % characterSprites.Length;
-            HighlightCharacter();
-        }
-        // Right arrow or D key
-        else if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
-        {
-            selectedIndex = (selectedIndex + 1) % characterSprites.Length;
-            HighlightCharacter();
-        }
-        // Space or Enter to select
-        else if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
-        {
-            OnSelectCharacter();
-        }
+        SetSelectedCharacter(index);
     }
 
     void HighlightCharacter()
@@ -63,16 +44,12 @@ public class CharacterSelector : MonoBehaviour
         {
             if (characterSprites[i] != null)
             {
-                // Change color
                 characterSprites[i].color = (i == selectedIndex) ? selectedColor : normalColor;
-
-                // Change scale
                 float scale = (i == selectedIndex) ? selectedScale : normalScale;
                 characterSprites[i].transform.localScale = Vector3.one * scale;
             }
         }
 
-        // Update selection indicators if they exist
         if (selectionIndicators != null)
         {
             for (int i = 0; i < selectionIndicators.Length; i++)
@@ -87,13 +64,11 @@ public class CharacterSelector : MonoBehaviour
 
     public void OnSelectCharacter()
     {
-        // Save the selected character index (you can use PlayerPrefs or a static variable)
         PlayerPrefs.SetInt("SelectedCharacter", selectedIndex);
         PlayerPrefs.Save();
 
         Debug.Log($"Character {selectedIndex + 1} selected!");
 
-        // Load the next scene
         if (!string.IsNullOrEmpty(nextSceneName))
         {
             SceneManager.LoadScene(nextSceneName);
@@ -104,13 +79,11 @@ public class CharacterSelector : MonoBehaviour
         }
     }
 
-    // Public method to get the currently selected character index
     public int GetSelectedCharacterIndex()
     {
         return selectedIndex;
     }
 
-    // Public method to set the selected character (useful for testing)
     public void SetSelectedCharacter(int index)
     {
         if (index >= 0 && index < characterSprites.Length)
@@ -118,5 +91,35 @@ public class CharacterSelector : MonoBehaviour
             selectedIndex = index;
             HighlightCharacter();
         }
+    }
+
+    // Optional: For direct click support on SpriteRenderer
+    void OnEnable()
+    {
+        for (int i = 0; i < characterSprites.Length; i++)
+        {
+            int idx = i;
+            var collider = characterSprites[i].GetComponent<Collider2D>();
+            if (collider == null)
+                collider = characterSprites[i].gameObject.AddComponent<BoxCollider2D>();
+            var clickHandler = characterSprites[i].gameObject.GetComponent<CharacterClickHandler>();
+            if (clickHandler == null)
+                clickHandler = characterSprites[i].gameObject.AddComponent<CharacterClickHandler>();
+            clickHandler.selector = this;
+            clickHandler.index = idx;
+        }
+    }
+}
+
+// Helper script for click/tap detection
+public class CharacterClickHandler : MonoBehaviour
+{
+    public CharacterSelector selector;
+    public int index;
+
+    void OnMouseDown()
+    {
+        if (selector != null)
+            selector.OnCharacterTapped(index);
     }
 }
