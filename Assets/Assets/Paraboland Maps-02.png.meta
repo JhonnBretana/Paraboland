@@ -185,7 +185,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Paraboland Maps-02_0: -8079158143387299423
+      Paraboland Maps-02_1: -6030230427826985359
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
