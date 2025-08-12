@@ -31,6 +31,10 @@ public class GoToBattle : MonoBehaviour
     public float fadeToBlack = 0.45f;
     public float fadeFromBlack = 0.45f;
 
+    [Header("Question Data")]
+    public int chapter = 1; // 1 to 5, set in Inspector
+    public string difficulty = "Easy"; // "Easy", "Average", "Difficult", set in Inspector
+
     private bool isLoading;
 
     void Reset()
@@ -47,19 +51,22 @@ public class GoToBattle : MonoBehaviour
 
         isLoading = true;
         PlayerPrefs.SetInt("CurrentQuestionIndex", questionIndex);
+        PlayerPrefs.SetInt("CurrentChapter", chapter);
+        PlayerPrefs.SetString("CurrentDifficulty", difficulty);
+
+        // Store the current scene name as the previous map
+        PlayerPrefs.SetString("PreviousMapScene", UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
 
         // prevent re-entry while loading
         var col = GetComponent<Collider2D>();
         if (col) col.enabled = false;
 
-        // Use your TransitionManager (must be present in a scene and have screenTransitionPrefab assigned)
         if (TransitionManager.I != null)
         {
             TransitionManager.I.LoadSceneWithTransition(sceneToLoad, fadeToBlack, fadeFromBlack);
         }
         else
         {
-            // Fallback: direct load if TransitionManager wasn't placed in the scene
             SceneManager.LoadScene(sceneToLoad);
         }
     }
