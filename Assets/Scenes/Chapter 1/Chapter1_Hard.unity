@@ -34591,7 +34591,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -36414,7 +36414,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.09375
+  orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -38060,7 +38060,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
