@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class CharacterSelector : MonoBehaviour
 {
     [Header("Character Selection")]
-    public SpriteRenderer[] characterSprites; // Assign your 5 character sprites in the Inspector
+    public Image[] characterImages; // Assign your 5 character images in the Inspector
     private int selectedIndex = 0;
 
     [Header("UI Elements")]
@@ -40,13 +40,13 @@ public class CharacterSelector : MonoBehaviour
 
     void HighlightCharacter()
     {
-        for (int i = 0; i < characterSprites.Length; i++)
+        for (int i = 0; i < characterImages.Length; i++)
         {
-            if (characterSprites[i] != null)
+            if (characterImages[i] != null)
             {
-                characterSprites[i].color = (i == selectedIndex) ? selectedColor : normalColor;
+                characterImages[i].color = (i == selectedIndex) ? selectedColor : normalColor;
                 float scale = (i == selectedIndex) ? selectedScale : normalScale;
-                characterSprites[i].transform.localScale = Vector3.one * scale;
+                characterImages[i].transform.localScale = Vector3.one * scale;
             }
         }
 
@@ -86,32 +86,34 @@ public class CharacterSelector : MonoBehaviour
 
     public void SetSelectedCharacter(int index)
     {
-        if (index >= 0 && index < characterSprites.Length)
+        if (index >= 0 && index < characterImages.Length)
         {
             selectedIndex = index;
             HighlightCharacter();
         }
     }
 
-    // Optional: For direct click support on SpriteRenderer
+    // Optional: For direct click support on UI Images
     void OnEnable()
     {
-        for (int i = 0; i < characterSprites.Length; i++)
+        for (int i = 0; i < characterImages.Length; i++)
         {
             int idx = i;
-            var collider = characterSprites[i].GetComponent<Collider2D>();
-            if (collider == null)
-                collider = characterSprites[i].gameObject.AddComponent<BoxCollider2D>();
-            var clickHandler = characterSprites[i].gameObject.GetComponent<CharacterClickHandler>();
-            if (clickHandler == null)
-                clickHandler = characterSprites[i].gameObject.AddComponent<CharacterClickHandler>();
-            clickHandler.selector = this;
-            clickHandler.index = idx;
+            // For UI Images, we'll use Button component for click detection
+            var button = characterImages[i].GetComponent<Button>();
+            if (button == null)
+                button = characterImages[i].gameObject.AddComponent<Button>();
+            
+            // Clear any existing listeners to avoid duplicates
+            button.onClick.RemoveAllListeners();
+            button.onClick.AddListener(() => OnCharacterTapped(idx));
         }
     }
 }
 
-// Helper script for click/tap detection
+// Helper script for click/tap detection (Legacy - for SpriteRenderer usage)
+// This is no longer needed when using UI Images with Button components
+/*
 public class CharacterClickHandler : MonoBehaviour
 {
     public CharacterSelector selector;
@@ -123,3 +125,4 @@ public class CharacterClickHandler : MonoBehaviour
             selector.OnCharacterTapped(index);
     }
 }
+*/

@@ -1388,17 +1388,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daa2fba5532a8a64eac5afb61905de4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprites:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  characterImages:
+  - {fileID: 1252784405}
+  - {fileID: 736966165}
+  - {fileID: 2015768168}
+  - {fileID: 407780031}
+  - {fileID: 1053556099}
   selectButton: {fileID: 38594567}
   selectionIndicators: []
   nextSceneName: ChapterSelection
   selectedColor: {r: 1, g: 0.015686274, b: 0.029682979, a: 1}
-  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  normalColor: {r: 0.4156863, g: 0.4156863, b: 0.4156863, a: 1}
   selectedScale: 0.6
   normalScale: 0.4
 --- !u!4 &1176742689
