@@ -152,10 +152,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 209253656}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 350.80322, y: 466.88205}
-  m_SizeDelta: {x: 421.89, y: 85.79}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -171}
+  m_SizeDelta: {x: 559.89, y: 113.849976}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &107442012
 MonoBehaviour:
@@ -211,6 +211,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: CharacterCreation
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 484326374}
+        m_TargetAssemblyTypeName: MusicEffectsManager, Assembly-CSharp
+        m_MethodName: PlayButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &107442013
@@ -347,8 +359,8 @@ RectTransform:
   m_Children:
   - {fileID: 1845110910}
   - {fileID: 107442011}
-  - {fileID: 286796789}
   - {fileID: 1720285255}
+  - {fileID: 286796789}
   - {fileID: 1977862613}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -420,7 +432,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &286796789
 RectTransform:
   m_ObjectHideFlags: 0
@@ -437,7 +449,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 350.80334, y: 332.11212}
+  m_AnchoredPosition: {x: 860, y: 332.11212}
   m_SizeDelta: {x: 421.89, y: 85.79}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &286796790
@@ -522,6 +534,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 286796788}
   m_CullTransparentMesh: 1
+--- !u!1 &484326373
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 484326375}
+  - component: {fileID: 484326374}
+  m_Layer: 0
+  m_Name: MusicEffectsManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &484326374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484326373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95a9e6b5edefabe488781df1dd23f98b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonClickSFX: {fileID: 8300000, guid: d66d89ddd156c6641bedfbdaf66e4cdd, type: 3}
+  winSFX: {fileID: 8300000, guid: 5e839126ae069164c86c2586d986e91f, type: 3}
+  loseSFX: {fileID: 8300000, guid: a88ce6f5099c6f143b981d9585ddec54, type: 3}
+--- !u!4 &484326375
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484326373}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.9660157, y: -0.8234349, z: 5.5550094}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &711898978
 GameObject:
   m_ObjectHideFlags: 0
@@ -771,10 +830,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 209253656}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 350.80334, y: 190.88208}
-  m_SizeDelta: {x: 237.56, y: 85.79}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 162}
+  m_SizeDelta: {x: 315.27002, y: 113.849976}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1720285256
 MonoBehaviour:
@@ -823,6 +882,18 @@ MonoBehaviour:
       - m_Target: {fileID: 239026587}
         m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
         m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 484326374}
+        m_TargetAssemblyTypeName: MusicEffectsManager, Assembly-CSharp
+        m_MethodName: PlayButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1028,3 +1099,4 @@ SceneRoots:
   - {fileID: 209253656}
   - {fileID: 711898981}
   - {fileID: 239026588}
+  - {fileID: 484326375}
