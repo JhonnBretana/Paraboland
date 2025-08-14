@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement; // Add this
 
 public class SettingsManager : MonoBehaviour
 {
@@ -33,5 +34,11 @@ public class SettingsManager : MonoBehaviour
     {
         Application.Quit();
         Debug.Log("Exiting app...");
+    }
+
+    // Call this from the Go Home button OnClick()
+    public void GoHome()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 }
