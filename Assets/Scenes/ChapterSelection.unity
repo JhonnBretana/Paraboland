@@ -3468,9 +3468,10 @@ MonoBehaviour:
   swipeSnap: {fileID: 1308474185}
   sceneNames:
   - Chapter1_Easy
-  - Chapt2_Easy
-  - 
-  - 
+  - Chapter2_Easy
+  - Chapter3_Easy
+  - Chapter4_Easy
+  - Chapter5_Easy
   fadeToBlack: 0.45
   fadeFromBlack: 0.45
   selectButton: {fileID: 0}
