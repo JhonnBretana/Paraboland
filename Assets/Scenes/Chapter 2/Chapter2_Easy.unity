@@ -19490,7 +19490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: EasyQuestion2
-  questionIndex: 4
+  questionIndex: 2
   fadeToBlack: 0.45
   fadeFromBlack: 0.45
   chapter: 2
@@ -22021,10 +22021,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: EasyQuestion2
-  questionIndex: 0
+  questionIndex: 3
   fadeToBlack: 0.45
   fadeFromBlack: 0.45
-  chapter: 1
+  chapter: 2
   difficulty: Easy
 --- !u!483693784 &1648750137
 TilemapRenderer:
@@ -28320,7 +28320,7 @@ MonoBehaviour:
   questionIndex: 0
   fadeToBlack: 0.45
   fadeFromBlack: 0.45
-  chapter: 1
+  chapter: 2
   difficulty: Easy
 --- !u!61 &2111870340
 BoxCollider2D:
