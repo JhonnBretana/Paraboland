@@ -82,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
     public void SaveSpawnPoint()
     {
         // Save current position with offset to avoid collider
-        Vector3 exitPosition = transform.position + new Vector3(0.5f, 0, 0); // Adjust offset as needed
+        Vector3 exitPosition = transform.position + new Vector3(0.60f, 0, 0); // Adjust offset as needed
         PlayerPrefs.SetFloat("PlayerSpawnX", exitPosition.x);
         PlayerPrefs.SetFloat("PlayerSpawnY", exitPosition.y);
     }
