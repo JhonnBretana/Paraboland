@@ -1925,6 +1925,7 @@ GameObject:
   - component: {fileID: 924218375}
   - component: {fileID: 924218377}
   - component: {fileID: 924218376}
+  - component: {fileID: 924218378}
   m_Layer: 5
   m_Name: Lost Character
   m_TagString: Untagged
@@ -1971,7 +1972,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2671218084691223152, guid: d6df74f7da338b34f9b7b879a3eb0b21, type: 3}
+  m_Sprite: {fileID: -8625906013721215279, guid: a3b7a35e884ead240a664572ce187600, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1989,6 +1990,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 924218374}
   m_CullTransparentMesh: 1
+--- !u!114 &924218378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924218374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23a82596d8e529f44bac079c33400928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterImage: {fileID: 924218376}
 --- !u!1 &941602556
 GameObject:
   m_ObjectHideFlags: 0
@@ -4141,6 +4155,12 @@ MonoBehaviour:
   - {fileID: 2185390996667782197, guid: 2a402163724d2e04f92df60aac53f1a9, type: 3}
   - {fileID: 6288530371997925523, guid: 043321110da1a0c40815b9efdac42852, type: 3}
   - {fileID: -3897872317146492887, guid: 4916df664ef4c1b45b2c4a00f9c7fd1f, type: 3}
+  allLoseCharacterSprites:
+  - {fileID: -7990361251885362795, guid: f443021904e758f4eab4bdc08c3ad2c3, type: 3}
+  - {fileID: -7099198348302075585, guid: 9cded56e05b806d4dac9be6a22648c1f, type: 3}
+  - {fileID: 2558753483358028639, guid: b716d09aed9517d47b8be145aaf3cbb6, type: 3}
+  - {fileID: -8625906013721215279, guid: a3b7a35e884ead240a664572ce187600, type: 3}
+  - {fileID: 4505726940697202597, guid: 0e309b8af7564a742841acb8fa305604, type: 3}
 --- !u!4 &1839827629
 Transform:
   m_ObjectHideFlags: 0

@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: d6df74f7da338b34f9b7b879a3eb0b21
+guid: 9cded56e05b806d4dac9be6a22648c1f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2671218084691223152
-    second: LOST Character_0
-  - first:
-      213: 1526778396875595256
-    second: LOST Character_1
-  - first:
-      213: -2503483873188171874
-    second: LOST Character_2
+      213: -7099198348302075585
+    second: virus4_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -132,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LOST Character_0
+      name: virus4_0
       rect:
         serializedVersion: 2
-        x: 72
-        y: 7
-        width: 248
-        height: 448
+        x: 0
+        y: 0
+        width: 380
+        height: 626
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,52 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 072ae9ff1b2121520800000000000000
-      internalID: 2671218084691223152
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LOST Character_1
-      rect:
-        serializedVersion: 2
-        x: 319
-        y: 336
-        width: 104
-        height: 112
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8fd928cdcd4303510800000000000000
-      internalID: 1526778396875595256
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LOST Character_2
-      rect:
-        serializedVersion: 2
-        x: 307
-        y: 297
-        width: 31
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e9f23bd6ea6d14dd0800000000000000
-      internalID: -2503483873188171874
+      spriteID: f393a6327b49a7d90800000000000000
+      internalID: -7099198348302075585
       vertices: []
       indices: 
       edges: []
@@ -210,10 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      LOST Character_0: 2671218084691223152
-      LOST Character_1: 1526778396875595256
-      LOST Character_2: -2503483873188171874
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
