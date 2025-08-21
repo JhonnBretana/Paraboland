@@ -21,6 +21,17 @@ public class SceneTransition : MonoBehaviour
 
     public void GoBackToPreviousMap()
     {
+        // Find the player object (adjust the name/tag if needed)
+        var player = GameObject.FindWithTag("Player");
+        if (player != null)
+        {
+            var movement = player.GetComponent<PlayerMovement>();
+            if (movement != null)
+            {
+                movement.SaveSpawnPoint();
+            }
+        }
+
         string previousMap = PlayerPrefs.GetString("PreviousMapScene", "");
         if (!string.IsNullOrEmpty(previousMap))
         {

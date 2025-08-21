@@ -3,8 +3,8 @@ using UnityEngine;
 public static class CharacterManager
 {
     public static Sprite[] CharacterSprites;
-    public static Sprite[] WinCharacterSprites; // Add this line
-
+    public static Sprite[] WinCharacterSprites;
+    private static Sprite[] LoseCharacterSprites;
     public static void SetSprites(Sprite[] sprites)
     {
         CharacterSprites = sprites;
@@ -13,6 +13,11 @@ public static class CharacterManager
     public static void SetWinSprites(Sprite[] sprites) // Add this method
     {
         WinCharacterSprites = sprites;
+    }
+
+    public static void SetLoseSprites(Sprite[] sprites) // Add this method
+    {
+        LoseCharacterSprites = sprites;
     }
 
     public static Sprite GetSelectedCharacterSprite()
@@ -28,6 +33,13 @@ public static class CharacterManager
         int idx = PlayerPrefs.GetInt("SelectedCharacter", 0);
         if (WinCharacterSprites != null && idx >= 0 && idx < WinCharacterSprites.Length)
             return WinCharacterSprites[idx];
+        return null;
+    }
+    public static Sprite GetSelectedLoseCharacterSprite()
+    {
+        int idx = PlayerPrefs.GetInt("SelectedCharacter", 0);
+        if (LoseCharacterSprites != null && idx >= 0 && idx < LoseCharacterSprites.Length)
+            return LoseCharacterSprites[idx];
         return null;
     }
 }

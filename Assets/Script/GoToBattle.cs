@@ -57,6 +57,10 @@ public class GoToBattle : MonoBehaviour
         // Store the current scene name as the previous map
         PlayerPrefs.SetString("PreviousMapScene", UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
 
+        // 🔻 Save player position
+        PlayerPrefs.SetFloat("PlayerSpawnX", other.transform.position.x);
+        PlayerPrefs.SetFloat("PlayerSpawnY", other.transform.position.y);
+
         // prevent re-entry while loading
         var col = GetComponent<Collider2D>();
         if (col) col.enabled = false;

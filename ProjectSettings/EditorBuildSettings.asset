@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/ChapterSelection.unity
     guid: 34a7076c8942238418775c84d72af175
   - enabled: 1
+    path: Assets/Scenes/Questions/EasyQuestion2.unity
+    guid: 722309e380be1524cb2fca5e113192ac
+  - enabled: 1
     path: Assets/Scenes/Chapter 1/Chapter1_Easy.unity
     guid: c2105bfe2e6daed40a98f2ed8a7adfd5
   - enabled: 1
@@ -26,9 +29,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Chapter 1/Chapter1_Medium.unity
     guid: f757390ed991e8146bb50d598fe413dc
-  - enabled: 1
-    path: Assets/Scenes/Questions/EasyQuestion2.unity
-    guid: 722309e380be1524cb2fca5e113192ac
   - enabled: 1
     path: Assets/Scenes/Chapter 1/Chapter1_Easy.unity
     guid: c2105bfe2e6daed40a98f2ed8a7adfd5
@@ -48,10 +48,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Chapter 2/Chapter2_Hard.unity
     guid: 466816685edf53546b6729d1d51efe09
   - enabled: 1
-    path: Assets/Scenes/Chapter 3/Chapter3_ Easy.unity
+    path: Assets/Scenes/Chapter 3/Chapter3_Easy.unity
     guid: 7d5e78bfcfc9dee408e1183f2cf9009b
   - enabled: 1
-    path: Assets/Scenes/Chapter 3/Chapter3_ Medium.unity
+    path: Assets/Scenes/Chapter 3/Chapter3_Medium.unity
     guid: e422caca2a0eb5344b3d623ecd73327c
   - enabled: 1
     path: Assets/Scenes/Chapter 3/Chapter3_Hard.unity

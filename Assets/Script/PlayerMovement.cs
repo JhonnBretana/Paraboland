@@ -6,6 +6,9 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     public Animator animator;
 
+    // Set your default spawn position for this map in the Inspector
+    public Vector3 defaultSpawnPosition = new Vector3(2f, 0, 0);
+
     private Vector2 movement = Vector2.zero;
 
     // Flags for button states
@@ -13,8 +16,25 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        // Make sure nothing is moving at the start
         upPressed = downPressed = leftPressed = rightPressed = false;
+
+        Vector3 spawnPos = defaultSpawnPosition; // Always use default unless returning
+
+        // Check if returning from a house/battle
+        if (PlayerPrefs.HasKey("PlayerSpawnX") && PlayerPrefs.HasKey("PlayerSpawnY"))
+        {
+            float x = PlayerPrefs.GetFloat("PlayerSpawnX");
+            float y = PlayerPrefs.GetFloat("PlayerSpawnY");
+            spawnPos = new Vector3(x, y, defaultSpawnPosition.z);
+
+            // Add offset to avoid trigger collider
+            spawnPos += new Vector3(2f, 0, 0);
+
+            PlayerPrefs.DeleteKey("PlayerSpawnX");
+            PlayerPrefs.DeleteKey("PlayerSpawnY");
+        }
+
+        transform.position = spawnPos;
     }
 
     void Update()
@@ -58,4 +78,12 @@ public class PlayerMovement : MonoBehaviour
 
     public void PressRight() => rightPressed = true;
     public void ReleaseRight() => rightPressed = false;
+
+    public void SaveSpawnPoint()
+    {
+        // Save current position with offset to avoid collider
+        Vector3 exitPosition = transform.position + new Vector3(0, 0, 0); // Adjust offset as needed
+        PlayerPrefs.SetFloat("PlayerSpawnX", exitPosition.x);
+        PlayerPrefs.SetFloat("PlayerSpawnY", exitPosition.y);
+    }
 }
