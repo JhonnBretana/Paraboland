@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
 
     // Set your default spawn position for this map in the Inspector
-    public Vector3 defaultSpawnPosition = new Vector3(0, 0, 0);
+    public Vector3 defaultSpawnPosition = new Vector3(2f, 0, 0);
 
     private Vector2 movement = Vector2.zero;
 
@@ -82,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
     public void SaveSpawnPoint()
     {
         // Save current position with offset to avoid collider
-        Vector3 exitPosition = transform.position + new Vector3(5f, 5f, 5); // Adjust offset as needed
+        Vector3 exitPosition = transform.position + new Vector3(0, 0, 0); // Adjust offset as needed
         PlayerPrefs.SetFloat("PlayerSpawnX", exitPosition.x);
         PlayerPrefs.SetFloat("PlayerSpawnY", exitPosition.y);
     }
