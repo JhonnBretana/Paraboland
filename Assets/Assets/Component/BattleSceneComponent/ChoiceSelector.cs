@@ -232,6 +232,11 @@ public class ChoiceSelector : MonoBehaviour
         if (index == correctAnswerIndex)
         {
             SaveCorrectAnswer();
+            // Only set healed flag after correct answer!
+            string houseId = $"House_{chapter}_{difficulty}_{questionIndex}";
+            PlayerPrefs.SetInt(houseId + "_Healed", 1);
+            PlayerPrefs.Save();
+
             if (resultModalWin != null) resultModalWin.SetActive(true);
             MusicEffectsManager.PlayWinBGM();
         }

@@ -44,10 +44,19 @@ public class GoToBattle : MonoBehaviour
         if (col) col.isTrigger = true;
     }
 
+    private string GetHouseId()
+    {
+        return $"House_{chapter}_{difficulty}_{questionIndex}";
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (isLoading) return;
         if (!other.CompareTag("Player")) return;
+
+        // Prevent entry if healed
+        string houseId = GetHouseId();
+        if (PlayerPrefs.GetInt(houseId + "_Healed", 0) == 1) return;
 
         isLoading = true;
         PlayerPrefs.SetInt("CurrentQuestionIndex", questionIndex);
