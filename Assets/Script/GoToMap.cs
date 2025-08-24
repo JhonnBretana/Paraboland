@@ -50,6 +50,10 @@ public class GoToMap : MonoBehaviour
 
         isLoading = true;
 
+        // Reset hearts to 3 when transitioning to another map/difficulty
+        PlayerPrefs.SetInt("CurrentHearts", 3);
+        PlayerPrefs.Save();
+
         PlayerPrefs.SetString("PreviousMapScene", SceneManager.GetActiveScene().name);
 
         var col = GetComponent<Collider2D>();

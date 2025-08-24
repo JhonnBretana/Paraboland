@@ -136,7 +136,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &34912904
 RectTransform:
   m_ObjectHideFlags: 0
@@ -669,6 +669,10 @@ MonoBehaviour:
   dialogBox: {fileID: 941602556}
   confirmationDialog: {fileID: 105262568}
   questionText: {fileID: 536405768}
+  heartIcons:
+  - {fileID: 1068077625}
+  - {fileID: 1220919662}
+  - {fileID: 969533967}
 --- !u!4 &167032364
 Transform:
   m_ObjectHideFlags: 0
@@ -981,7 +985,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &277378127
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4071,7 +4075,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1754142548
 RectTransform:
   m_ObjectHideFlags: 0

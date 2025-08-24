@@ -19,6 +19,10 @@ public class ChoiceSelector : MonoBehaviour
 
     public TMP_Text questionText; // Assign in Inspector
 
+    public GameObject[] heartIcons; // Assign Heart1, Heart2, Heart3 in Inspector
+    private int currentHearts = 3; // Default to 3 hearts
+    private const string HeartsKey = "CurrentHearts";
+
     void Start()
     {
         int questionIndex = PlayerPrefs.GetInt("CurrentQuestionIndex", 0);
@@ -178,6 +182,9 @@ public class ChoiceSelector : MonoBehaviour
             int index = i;
             choiceButtons[i].onClick.AddListener(() => OnChoiceTapped(index));
         }
+
+        currentHearts = PlayerPrefs.GetInt(HeartsKey, 3); // Load hearts from PlayerPrefs
+        UpdateHeartsUI();
     }
     void Update()
     {
@@ -195,12 +202,33 @@ public class ChoiceSelector : MonoBehaviour
         {
             SaveCorrectAnswer();
             if (resultModalWin != null) resultModalWin.SetActive(true);
-            MusicEffectsManager.PlayWinBGM(); // Play win BGM
+            MusicEffectsManager.PlayWinBGM();
         }
         else
         {
             if (resultModalLost != null) resultModalLost.SetActive(true);
-            MusicEffectsManager.PlayLoseBGM(); // Play lose BGM
+            MusicEffectsManager.PlayLoseBGM();
+            LoseHeart(); // Minus heart on lose
+        }
+    }
+
+    void LoseHeart()
+    {
+        if (currentHearts > 0)
+        {
+            currentHearts--;
+            PlayerPrefs.SetInt(HeartsKey, currentHearts); // Save hearts
+            PlayerPrefs.Save();
+            UpdateHeartsUI();
+        }
+    }
+
+    void UpdateHeartsUI()
+    {
+        for (int i = 0; i < heartIcons.Length; i++)
+        {
+            if (heartIcons[i] != null)
+                heartIcons[i].SetActive(i < currentHearts);
         }
     }
 
@@ -233,6 +261,11 @@ public class ChoiceSelector : MonoBehaviour
         if (resultModalLost != null) resultModalLost.SetActive(false);
         SetObjectsToHideActive(true);
         selectedIndex = 0;
+        // Optionally reset hearts here if needed:
+        // currentHearts = 3;
+        // PlayerPrefs.SetInt(HeartsKey, currentHearts);
+        // PlayerPrefs.Save();
+        // UpdateHeartsUI();
     }
 
     // Called when a choice is tapped
