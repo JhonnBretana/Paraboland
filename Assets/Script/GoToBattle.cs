@@ -42,7 +42,7 @@ public class GoToBattle : MonoBehaviour
     {
         // make sure this collider is a trigger
         var col = GetComponent<Collider2D>();
-        if (col) col.isTrigger = false;
+        if (col) col.isTrigger = true;
     }
 
     private string GetHouseId()
@@ -60,18 +60,18 @@ public class GoToBattle : MonoBehaviour
         if (PlayerPrefs.GetInt(houseId + "_Healed", 0) == 1) return;
 
         isLoading = true;
-        PlayerPrefs.SetInt("CurrentQuestionIndex", 0);
+        PlayerPrefs.SetInt("CurrentQuestionIndex", questionIndex);
         PlayerPrefs.SetInt("CurrentChapter", chapter);
         PlayerPrefs.SetString("CurrentDifficulty", difficulty);
 
         // --- Randomize questions for this chapter/difficulty ---
         int totalQuestions = 5; // Adjust if needed
         int[] randomizedIndices = GenerateRandomIndices(totalQuestions);
-        if (randomizedIndices.Length == 0)
-        {
-            // Optionally show a healed sign or message here
-            return;
-        }
+        // if (randomizedIndices.Length == 0)
+        // {
+        //     // Optionally show a healed sign or message here
+        //     return;
+        // }
 
         // Save as comma-separated string
         PlayerPrefs.SetString("RandomizedQuestionOrder", string.Join(",", randomizedIndices));
