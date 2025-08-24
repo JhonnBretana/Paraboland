@@ -34,19 +34,19 @@ public class ChoiceSelector : MonoBehaviour
         difficulty = PlayerPrefs.GetString("CurrentDifficulty", "Easy");
         questionIndex = PlayerPrefs.GetInt("CurrentQuestionIndex", 0);
 
-        // Get randomized order from PlayerPrefs
-        string orderStr = PlayerPrefs.GetString("RandomizedQuestionOrder", "");
-        if (!string.IsNullOrEmpty(orderStr))
-        {
-            string[] parts = orderStr.Split(',');
-            randomizedOrder = new int[parts.Length];
-            for (int i = 0; i < parts.Length; i++)
-                randomizedOrder[i] = int.Parse(parts[i]);
-        }
-        else
-        {
-            randomizedOrder = new int[] { 0, 1, 2, 3, 4 };
-        }
+        // // Get randomized order from PlayerPrefs
+        // string orderStr = PlayerPrefs.GetString("RandomizedQuestionOrder", "");
+        // if (!string.IsNullOrEmpty(orderStr))
+        // {
+        //     string[] parts = orderStr.Split(',');
+        //     randomizedOrder = new int[parts.Length];
+        //     for (int i = 0; i < parts.Length; i++)
+        //         randomizedOrder[i] = int.Parse(parts[i]);
+        // }
+        // else
+        // {
+        //     randomizedOrder = new int[] { 0, 1, 2, 3, 4 };
+        // }
 
         // Now you can use chapter, difficulty, questionIndex, and randomizedOrder in your logic
         // Example:
@@ -192,25 +192,34 @@ public class ChoiceSelector : MonoBehaviour
                 break;
         }
 
-        // Check for available questions
-        if (randomizedOrder.Length == 0 || questionIndex >= randomizedOrder.Length)
+        // // Check for available questions
+        // if (randomizedOrder.Length == 0 || questionIndex >= randomizedOrder.Length)
+        // {
+        //     // No available questions, show a message or exit
+        //     questionText.text = "All questions answered!";
+        //     foreach (var btn in choiceButtons)
+        //         btn.gameObject.SetActive(false);
+        //     return;
+        // }
+
+        // Use questionIndex directly, not randomizedOrder
+        if (questions == null || questionIndex < 0 || questionIndex >= questions.Length)
         {
-            // No available questions, show a message or exit
             questionText.text = "All questions answered!";
             foreach (var btn in choiceButtons)
                 btn.gameObject.SetActive(false);
             return;
         }
 
-        int actualIndex = randomizedOrder[questionIndex];
-        questionText.text = questions[actualIndex];
+        // int actualIndex = randomizedOrder[questionIndex];
+        questionText.text = questions[questionIndex];
         for (int i = 0; i < choiceButtons.Length; i++)
         {
             TMP_Text btnText = choiceButtons[i].GetComponentInChildren<TMP_Text>();
             if (btnText != null)
-                btnText.text = choices[actualIndex, i];
+                btnText.text = choices[questionIndex, i];
         }
-        correctAnswerIndex = answers[actualIndex];
+        correctAnswerIndex = answers[questionIndex];
 
         ShowDialog();
 

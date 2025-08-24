@@ -64,22 +64,22 @@ public class GoToBattle : MonoBehaviour
         PlayerPrefs.SetInt("CurrentChapter", chapter);
         PlayerPrefs.SetString("CurrentDifficulty", difficulty);
 
-        // --- Randomize questions for this chapter/difficulty ---
-        int totalQuestions = 5; // Adjust if needed
-        int[] randomizedIndices = GenerateRandomIndices(totalQuestions);
-        // if (randomizedIndices.Length == 0)
-        // {
-        //     // Optionally show a healed sign or message here
-        //     return;
-        // }
+        // // --- Randomize questions for this chapter/difficulty ---
+        // int totalQuestions = 5; // Adjust if needed
+        // int[] randomizedIndices = GenerateRandomIndices(totalQuestions);
+        // // if (randomizedIndices.Length == 0)
+        // // {
+        // //     // Optionally show a healed sign or message here
+        // //     return;
+        // // }
 
         // Save as comma-separated string
-        PlayerPrefs.SetString("RandomizedQuestionOrder", string.Join(",", randomizedIndices));
+        // PlayerPrefs.SetString("RandomizedQuestionOrder", string.Join(",", randomizedIndices));
+        PlayerPrefs.SetString("RandomizedQuestionOrder", questionIndex.ToString());
         PlayerPrefs.Save();
         // -------------------------------------------------------
 
         PlayerPrefs.SetString("PreviousMapScene", UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
-
         PlayerPrefs.SetFloat("PlayerSpawnX", other.transform.position.x);
         PlayerPrefs.SetFloat("PlayerSpawnY", other.transform.position.y);
 
