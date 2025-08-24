@@ -2882,6 +2882,11 @@ MonoBehaviour:
   buttonClickSFX: {fileID: 8300000, guid: d66d89ddd156c6641bedfbdaf66e4cdd, type: 3}
   winSFX: {fileID: 8300000, guid: 5e839126ae069164c86c2586d986e91f, type: 3}
   loseSFX: {fileID: 8300000, guid: a88ce6f5099c6f143b981d9585ddec54, type: 3}
+  mainMenuBGM: {fileID: 0}
+  chapterSelectionBGM: {fileID: 0}
+  characterSelectionBGM: {fileID: 0}
+  mapBGM: {fileID: 0}
+  battleBGM: {fileID: 0}
 --- !u!4 &1097818405
 Transform:
   m_ObjectHideFlags: 0

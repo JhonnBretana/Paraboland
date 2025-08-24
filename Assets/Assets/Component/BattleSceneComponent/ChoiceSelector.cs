@@ -192,6 +192,16 @@ public class ChoiceSelector : MonoBehaviour
                 break;
         }
 
+        // Check for available questions
+        if (randomizedOrder.Length == 0 || questionIndex >= randomizedOrder.Length)
+        {
+            // No available questions, show a message or exit
+            questionText.text = "All questions answered!";
+            foreach (var btn in choiceButtons)
+                btn.gameObject.SetActive(false);
+            return;
+        }
+
         int actualIndex = randomizedOrder[questionIndex];
         questionText.text = questions[actualIndex];
         for (int i = 0; i < choiceButtons.Length; i++)

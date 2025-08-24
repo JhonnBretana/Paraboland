@@ -19,6 +19,7 @@
 
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 [RequireComponent(typeof(Collider2D))]
 public class GoToBattle : MonoBehaviour
@@ -41,7 +42,7 @@ public class GoToBattle : MonoBehaviour
     {
         // make sure this collider is a trigger
         var col = GetComponent<Collider2D>();
-        if (col) col.isTrigger = true;
+        if (col) col.isTrigger = false;
     }
 
     private string GetHouseId()
@@ -59,13 +60,19 @@ public class GoToBattle : MonoBehaviour
         if (PlayerPrefs.GetInt(houseId + "_Healed", 0) == 1) return;
 
         isLoading = true;
-        PlayerPrefs.SetInt("CurrentQuestionIndex", questionIndex);
+        PlayerPrefs.SetInt("CurrentQuestionIndex", 0);
         PlayerPrefs.SetInt("CurrentChapter", chapter);
         PlayerPrefs.SetString("CurrentDifficulty", difficulty);
 
         // --- Randomize questions for this chapter/difficulty ---
         int totalQuestions = 5; // Adjust if needed
         int[] randomizedIndices = GenerateRandomIndices(totalQuestions);
+        if (randomizedIndices.Length == 0)
+        {
+            // Optionally show a healed sign or message here
+            return;
+        }
+
         // Save as comma-separated string
         PlayerPrefs.SetString("RandomizedQuestionOrder", string.Join(",", randomizedIndices));
         PlayerPrefs.Save();
@@ -76,8 +83,8 @@ public class GoToBattle : MonoBehaviour
         PlayerPrefs.SetFloat("PlayerSpawnX", other.transform.position.x);
         PlayerPrefs.SetFloat("PlayerSpawnY", other.transform.position.y);
 
-        var col = GetComponent<Collider2D>();
-        if (col) col.enabled = false;
+        // var col = GetComponent<Collider2D>();
+        // if (col) col.enabled = false;
 
         if (TransitionManager.I != null)
         {
@@ -92,15 +99,23 @@ public class GoToBattle : MonoBehaviour
     // Add this helper function:
     private int[] GenerateRandomIndices(int count)
     {
-        int[] indices = new int[count];
-        for (int i = 0; i < count; i++) indices[i] = i;
-        for (int i = count - 1; i > 0; i--)
+        List<int> availableIndices = new List<int>();
+        for (int i = 0; i < count; i++)
+        {
+            string key = $"Chapter{chapter}_{difficulty}_Q{i}_Correct";
+            if (PlayerPrefs.GetInt(key, 0) == 0) // Only add unanswered questions
+                availableIndices.Add(i);
+        }
+
+        // Shuffle available indices
+        for (int i = availableIndices.Count - 1; i > 0; i--)
         {
             int j = Random.Range(0, i + 1);
-            int temp = indices[i];
-            indices[i] = indices[j];
-            indices[j] = temp;
+            int temp = availableIndices[i];
+            availableIndices[i] = availableIndices[j];
+            availableIndices[j] = temp;
         }
-        return indices;
+
+        return availableIndices.ToArray();
     }
 }
