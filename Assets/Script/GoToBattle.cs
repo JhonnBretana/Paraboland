@@ -54,14 +54,19 @@ public class GoToBattle : MonoBehaviour
         PlayerPrefs.SetInt("CurrentChapter", chapter);
         PlayerPrefs.SetString("CurrentDifficulty", difficulty);
 
-        // Store the current scene name as the previous map
+        // --- Randomize questions for this chapter/difficulty ---
+        int totalQuestions = 5; // Adjust if needed
+        int[] randomizedIndices = GenerateRandomIndices(totalQuestions);
+        // Save as comma-separated string
+        PlayerPrefs.SetString("RandomizedQuestionOrder", string.Join(",", randomizedIndices));
+        PlayerPrefs.Save();
+        // -------------------------------------------------------
+
         PlayerPrefs.SetString("PreviousMapScene", UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
 
-        // 🔻 Save player position
         PlayerPrefs.SetFloat("PlayerSpawnX", other.transform.position.x);
         PlayerPrefs.SetFloat("PlayerSpawnY", other.transform.position.y);
 
-        // prevent re-entry while loading
         var col = GetComponent<Collider2D>();
         if (col) col.enabled = false;
 
@@ -73,5 +78,20 @@ public class GoToBattle : MonoBehaviour
         {
             SceneManager.LoadScene(sceneToLoad);
         }
+    }
+
+    // Add this helper function:
+    private int[] GenerateRandomIndices(int count)
+    {
+        int[] indices = new int[count];
+        for (int i = 0; i < count; i++) indices[i] = i;
+        for (int i = count - 1; i > 0; i--)
+        {
+            int j = Random.Range(0, i + 1);
+            int temp = indices[i];
+            indices[i] = indices[j];
+            indices[j] = temp;
+        }
+        return indices;
     }
 }

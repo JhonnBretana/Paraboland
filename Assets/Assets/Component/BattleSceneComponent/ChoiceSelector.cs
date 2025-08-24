@@ -23,12 +23,42 @@ public class ChoiceSelector : MonoBehaviour
     private int currentHearts = 3; // Default to 3 hearts
     private const string HeartsKey = "CurrentHearts";
 
+    private int chapter;
+    private string difficulty;
+    private int questionIndex;
+    private int[] randomizedOrder;
+
     void Start()
     {
-        int questionIndex = PlayerPrefs.GetInt("CurrentQuestionIndex", 0);
-        int chapter = PlayerPrefs.GetInt("CurrentChapter", 1);
-        string difficulty = PlayerPrefs.GetString("CurrentDifficulty", "Easy");
+        chapter = PlayerPrefs.GetInt("CurrentChapter", 1);
+        difficulty = PlayerPrefs.GetString("CurrentDifficulty", "Easy");
+        questionIndex = PlayerPrefs.GetInt("CurrentQuestionIndex", 0);
 
+        // Get randomized order from PlayerPrefs
+        string orderStr = PlayerPrefs.GetString("RandomizedQuestionOrder", "");
+        if (!string.IsNullOrEmpty(orderStr))
+        {
+            string[] parts = orderStr.Split(',');
+            randomizedOrder = new int[parts.Length];
+            for (int i = 0; i < parts.Length; i++)
+                randomizedOrder[i] = int.Parse(parts[i]);
+        }
+        else
+        {
+            randomizedOrder = new int[] { 0, 1, 2, 3, 4 };
+        }
+
+        // Now you can use chapter, difficulty, questionIndex, and randomizedOrder in your logic
+        // Example:
+        // int questionIdx = randomizedOrder[currentQuestionIndex];
+        // string question = Chapter1Questions.Easy[questionIdx];
+        // string[] choices = new string[] {
+        //     Chapter1Choices.Easy[questionIdx, 0],
+        //     Chapter1Choices.Easy[questionIdx, 1],
+        //     Chapter1Choices.Easy[questionIdx, 2],
+        //     Chapter1Choices.Easy[questionIdx, 3]
+        // };
+        // int answerIdx = Chapter1Answers.Easy[questionIdx];
         string[] questions = null;
         string[,] choices = null;
         int[] answers = null;
@@ -162,14 +192,15 @@ public class ChoiceSelector : MonoBehaviour
                 break;
         }
 
-        questionText.text = questions[questionIndex];
+        int actualIndex = randomizedOrder[questionIndex];
+        questionText.text = questions[actualIndex];
         for (int i = 0; i < choiceButtons.Length; i++)
         {
             TMP_Text btnText = choiceButtons[i].GetComponentInChildren<TMP_Text>();
             if (btnText != null)
-                btnText.text = choices[questionIndex, i];
+                btnText.text = choices[actualIndex, i];
         }
-        correctAnswerIndex = answers[questionIndex];
+        correctAnswerIndex = answers[actualIndex];
 
         ShowDialog();
 
