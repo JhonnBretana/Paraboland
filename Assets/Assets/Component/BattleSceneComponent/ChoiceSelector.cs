@@ -195,10 +195,12 @@ public class ChoiceSelector : MonoBehaviour
         {
             SaveCorrectAnswer();
             if (resultModalWin != null) resultModalWin.SetActive(true);
+            MusicEffectsManager.PlayWinBGM(); // Play win BGM
         }
         else
         {
             if (resultModalLost != null) resultModalLost.SetActive(true);
+            MusicEffectsManager.PlayLoseBGM(); // Play lose BGM
         }
     }
 

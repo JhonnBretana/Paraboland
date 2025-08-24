@@ -1,10 +1,18 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MusicEffectsManager : MonoBehaviour
 {
     public AudioClip buttonClickSFX;
     public AudioClip winSFX;
     public AudioClip loseSFX;
+
+    [Header("Background Music")]
+    public AudioClip mainMenuBGM;
+    public AudioClip chapterSelectionBGM;
+    public AudioClip characterSelectionBGM;
+    public AudioClip mapBGM;
+    public AudioClip battleBGM;
 
     private AudioSource audioSource;
     private static MusicEffectsManager instance;
@@ -16,11 +24,46 @@ public class MusicEffectsManager : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(gameObject);
             audioSource = gameObject.AddComponent<AudioSource>();
-            audioSource.loop = false;
+            audioSource.loop = true;
+            SceneManager.sceneLoaded += OnSceneLoaded;
         }
         else
         {
             Destroy(gameObject);
+        }
+    }
+
+    void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        PlayBackgroundMusicForScene(scene.name);
+    }
+
+    private void PlayBackgroundMusicForScene(string sceneName)
+    {
+        AudioClip bgmToPlay = null;
+
+        if (sceneName == "MainMenu")
+            bgmToPlay = mainMenuBGM;
+        else if (sceneName == "ChapterSelection")
+            bgmToPlay = chapterSelectionBGM;
+        else if (sceneName == "CharacterCreation")
+            bgmToPlay = characterSelectionBGM;
+        else if (sceneName.StartsWith("Chapter")) // e.g., Chapter1, Chapter2, etc.
+            bgmToPlay = mapBGM;
+        else if (sceneName == "EasyQuestion2")
+            bgmToPlay = battleBGM;
+
+        if (audioSource.clip != bgmToPlay)
+        {
+            audioSource.Stop();
+            audioSource.clip = bgmToPlay;
+            if (bgmToPlay != null)
+                audioSource.Play();
         }
     }
 
@@ -40,5 +83,27 @@ public class MusicEffectsManager : MonoBehaviour
     {
         if (instance != null && instance.loseSFX != null)
             instance.audioSource.PlayOneShot(instance.loseSFX);
+    }
+
+    public static void PlayWinBGM()
+    {
+        if (instance != null && instance.winSFX != null)
+        {
+            instance.audioSource.Stop();
+            instance.audioSource.clip = instance.winSFX;
+            instance.audioSource.loop = false;
+            instance.audioSource.Play();
+        }
+    }
+
+    public static void PlayLoseBGM()
+    {
+        if (instance != null && instance.loseSFX != null)
+        {
+            instance.audioSource.Stop();
+            instance.audioSource.clip = instance.loseSFX;
+            instance.audioSource.loop = false;
+            instance.audioSource.Play();
+        }
     }
 }

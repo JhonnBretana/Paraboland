@@ -39,6 +39,6 @@ public class SettingsManager : MonoBehaviour
     // Call this from the Go Home button OnClick()
     public void GoHome()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene("MainMenu");
     }
 }
