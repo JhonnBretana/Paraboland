@@ -10,7 +10,6 @@ public class CharacterSelector : MonoBehaviour
 
     [Header("UI Elements")]
     public Button selectButton; // The "SELECT" button
-    public GameObject[] selectionIndicators; // Optional: visual indicators for selection
 
     [Header("Scene Management")]
     public string nextSceneName = "ChapterSelection"; // Scene to load after character selection
@@ -50,16 +49,7 @@ public class CharacterSelector : MonoBehaviour
             }
         }
 
-        if (selectionIndicators != null)
-        {
-            for (int i = 0; i < selectionIndicators.Length; i++)
-            {
-                if (selectionIndicators[i] != null)
-                {
-                    selectionIndicators[i].SetActive(i == selectedIndex);
-                }
-            }
-        }
+    // ...selectionIndicators removed...
     }
 
     public void OnSelectCharacter()
