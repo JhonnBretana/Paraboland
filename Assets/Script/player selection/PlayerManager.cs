@@ -24,3 +24,4 @@ public class PlayerManager : MonoBehaviour
         if (pm && dpad) dpad.SetPlayer(pm);
     }
 }
+
