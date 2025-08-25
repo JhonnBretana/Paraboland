@@ -63,6 +63,8 @@ public class GoToMap : MonoBehaviour
         if (difficulty == "Hard" && mapSceneToLoad == "ChapterSelection")
         {
             ChapterProgress.UnlockChapter(chapter + 1);
+            PlayerPrefs.SetInt($"Chapter{chapter}_Hard_Completed", 1);
+            PlayerPrefs.Save();
         }
 
         if (TransitionManager.I != null)

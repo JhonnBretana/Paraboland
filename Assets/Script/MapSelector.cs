@@ -4,8 +4,8 @@ using UnityEngine.UI;
 public class MapSelector : MonoBehaviour
 {
     [Header("Inputs")]
-    public SwipeSnap swipeSnap;       // drag your carousel/SwipeSnap here
-    public string[] sceneNames;       // names match the carousel order
+    public SwipeSnap swipeSnap;
+    public string[] sceneNames;
 
     [Header("Transition (seconds)")]
     public float fadeToBlack = 0.45f;
@@ -13,24 +13,37 @@ public class MapSelector : MonoBehaviour
 
     [Header("UI References")]
     public Image[] mapImages;      // Assign each map card's Image in Inspector (order matches sceneNames)
+    public GameObject[] checkUIs;  // Assign each chapter's check UI in Inspector (order matches sceneNames)
 
     [Header("Optional")]
-    public Button selectButton;       // assign to prevent double taps
+    public Button selectButton;
 
     bool isLoading;
 
     void Start()
     {
-        // Apply unlocked/locked color
         for (int i = 0; i < sceneNames.Length; i++)
         {
             int chapterNum = i + 1;
             bool unlocked = ChapterProgress.IsChapterUnlocked(chapterNum);
 
+            // Check if completed (Hard difficulty transition reached)
+            bool completed = PlayerPrefs.GetInt($"Chapter{chapterNum}_Hard_Completed", 0) == 1;
+
+            // Set check UI active if completed
+            if (checkUIs != null && i < checkUIs.Length && checkUIs[i] != null)
+                checkUIs[i].SetActive(completed);
+
+            // Set opacity
             if (mapImages != null && i < mapImages.Length && mapImages[i] != null)
             {
                 var color = mapImages[i].color;
-                color.a = unlocked ? 1f : 0.5f; // 1 = fully visible, 0.5 = greyed out
+                if (!unlocked)
+                    color.a = 0.5f; // locked
+                else if (completed)
+                    color.a = 0.7f; // completed
+                else
+                    color.a = 1f;   // normal
                 mapImages[i].color = color;
             }
         }
