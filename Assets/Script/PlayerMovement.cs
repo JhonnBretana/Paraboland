@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    // 🔹 Singleton instance
+    public static PlayerMovement Instance;
+
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
     public Animator animator;
@@ -14,20 +17,24 @@ public class PlayerMovement : MonoBehaviour
     // Flags for button states
     private bool upPressed, downPressed, leftPressed, rightPressed;
 
+    void Awake()
+    {
+        // Ensure only one active instance exists
+        Instance = this;
+    }
+
     void Start()
     {
         upPressed = downPressed = leftPressed = rightPressed = false;
 
-        Vector3 spawnPos = defaultSpawnPosition; // Always use default unless returning
+        Vector3 spawnPos = defaultSpawnPosition;
 
-        // Check if returning from a house/battle
         if (PlayerPrefs.HasKey("PlayerSpawnX") && PlayerPrefs.HasKey("PlayerSpawnY"))
         {
             float x = PlayerPrefs.GetFloat("PlayerSpawnX");
             float y = PlayerPrefs.GetFloat("PlayerSpawnY");
             spawnPos = new Vector3(x, y, defaultSpawnPosition.z);
 
-            // Add offset to avoid trigger collider
             spawnPos += new Vector3(2f, 0, 0);
 
             PlayerPrefs.DeleteKey("PlayerSpawnX");
@@ -39,10 +46,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        // Debug to check if a button is stuck
-        Debug.Log($"UP:{upPressed} DOWN:{downPressed} LEFT:{leftPressed} RIGHT:{rightPressed}");
-
-        // Reset movement every frame
         movement = Vector2.zero;
 
         if (upPressed) movement.y += 1;
@@ -50,10 +53,8 @@ public class PlayerMovement : MonoBehaviour
         if (leftPressed) movement.x -= 1;
         if (rightPressed) movement.x += 1;
 
-        // Normalize to prevent faster diagonal movement
         movement = movement.normalized;
 
-        // Animate based on direction
         animator.SetFloat("MoveX", movement.x);
         animator.SetFloat("MoveY", movement.y);
         animator.SetBool("isMoving", movement != Vector2.zero);
@@ -61,12 +62,10 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Move the player smoothly
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 
     // 🔻 Button handlers
-
     public void PressUp() => upPressed = true;
     public void ReleaseUp() => upPressed = false;
 
@@ -81,8 +80,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void SaveSpawnPoint()
     {
-        // Save current position with offset to avoid collider
-        Vector3 exitPosition = transform.position + new Vector3(0, 0, 0); // Adjust offset as needed
+        Vector3 exitPosition = transform.position;
         PlayerPrefs.SetFloat("PlayerSpawnX", exitPosition.x);
         PlayerPrefs.SetFloat("PlayerSpawnY", exitPosition.y);
     }
