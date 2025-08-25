@@ -18,7 +18,7 @@ public static class Chapter4Questions
         "By factoring x²-2x-24=0, what are the roots?"
     };
 
-    public static readonly string[] Difficult = new string[]
+    public static readonly string[] Hard = new string[]
     {
         "Factor the trinomial completely: 6x²-x-15",
         "Which trinomial is NOT factorable?",

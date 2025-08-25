@@ -18,7 +18,7 @@ public static class Chapter1Questions
         "Find the values of x that solve this equation: 2x² + 4x = 0"
     };
 
-    public static readonly string[] Difficult = new string[]
+    public static readonly string[] Hard = new string[]
     {
         "What are the values of x that satisfy 12x² + 8x = 0?",
         "What are the values of x in this equation: 9x² – 12x = 0?",

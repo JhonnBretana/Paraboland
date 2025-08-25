@@ -18,7 +18,7 @@ public static class Chapter3Questions
         "Find the value of x which satisfies the equation 9x² + 6x + 1 = 0"
     };
 
-    public static readonly string[] Difficult = new string[]
+    public static readonly string[] Hard = new string[]
     {
         "What is/are the root/s of the quadratic equation: x² + 10x + 25 = 0?",
         "Factor the perfect square trinomial 49m² + 56m + 16",

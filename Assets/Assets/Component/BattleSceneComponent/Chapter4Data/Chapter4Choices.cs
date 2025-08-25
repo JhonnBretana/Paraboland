@@ -18,7 +18,7 @@ public static class Chapter4Choices
         { "A.) x=-6,4", "B.) x=6,-4", "C.) x=2,-12", "D.) x=-2,-12" }
     };
 
-    public static readonly string[,] Difficult = new string[,]
+    public static readonly string[,] Hard = new string[,]
     {
         { "A.) (3x+5)(2x-3)", "B.) (2x+5)(3x-3)", "C.) (3x-5)(2x+3)", "D.) (2x-5)(3x+3)" },
         { "A.) x²-7x+10", "B.) x²-5x+6", "C.) x²-2x+2", "D.) x²+6x+8" },

@@ -18,7 +18,7 @@ public static class Chapter5Questions
         "Solve for the value of x in the equation 3z² + 18z + 24 = 0"
     };
 
-    public static readonly string[] Difficult = new string[]
+    public static readonly string[] Hard = new string[]
     {
         "Factor completely: x³ + 2x² + 3x + 6",
         "Factor by grouping: 2x³ + 2x² + 3x + 6",

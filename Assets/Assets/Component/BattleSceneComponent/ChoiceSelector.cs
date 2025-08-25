@@ -78,10 +78,10 @@ public class ChoiceSelector : MonoBehaviour
                         choices = Chapter1Choices.Average;
                         answers = Chapter1Answers.Average;
                         break;
-                    case "Difficult":
-                        questions = Chapter1Questions.Difficult;
-                        choices = Chapter1Choices.Difficult;
-                        answers = Chapter1Answers.Difficult;
+                    case "Hard":
+                        questions = Chapter1Questions.Hard;
+                        choices = Chapter1Choices.Hard;
+                        answers = Chapter1Answers.Hard;
                         break;
                     default:
                         questions = Chapter1Questions.Easy;
@@ -103,10 +103,10 @@ public class ChoiceSelector : MonoBehaviour
                         choices = Chapter2Choices.Average;
                         answers = Chapter2Answers.Average;
                         break;
-                    case "Difficult":
-                        questions = Chapter2Questions.Difficult;
-                        choices = Chapter2Choices.Difficult;
-                        answers = Chapter2Answers.Difficult;
+                    case "Hard":
+                        questions = Chapter2Questions.Hard;
+                        choices = Chapter2Choices.Hard;
+                        answers = Chapter2Answers.Hard;
                         break;
                     default:
                         questions = Chapter2Questions.Easy;
@@ -128,10 +128,10 @@ public class ChoiceSelector : MonoBehaviour
                         choices = Chapter3Choices.Average;
                         answers = Chapter3Answers.Average;
                         break;
-                    case "Difficult":
-                        questions = Chapter3Questions.Difficult;
-                        choices = Chapter3Choices.Difficult;
-                        answers = Chapter3Answers.Difficult;
+                    case "Hard":
+                        questions = Chapter3Questions.Hard;
+                        choices = Chapter3Choices.Hard;
+                        answers = Chapter3Answers.Hard;
                         break;
                     default:
                         questions = Chapter3Questions.Easy;
@@ -153,10 +153,10 @@ public class ChoiceSelector : MonoBehaviour
                         choices = Chapter4Choices.Average;
                         answers = Chapter4Answers.Average;
                         break;
-                    case "Difficult":
-                        questions = Chapter4Questions.Difficult;
-                        choices = Chapter4Choices.Difficult;
-                        answers = Chapter4Answers.Difficult;
+                    case "Hard":
+                        questions = Chapter4Questions.Hard;
+                        choices = Chapter4Choices.Hard;
+                        answers = Chapter4Answers.Hard;
                         break;
                     default:
                         questions = Chapter4Questions.Easy;
@@ -178,10 +178,10 @@ public class ChoiceSelector : MonoBehaviour
                         choices = Chapter5Choices.Average;
                         answers = Chapter5Answers.Average;
                         break;
-                    case "Difficult":
-                        questions = Chapter5Questions.Difficult;
-                        choices = Chapter5Choices.Difficult;
-                        answers = Chapter5Answers.Difficult;
+                    case "Hard":
+                        questions = Chapter5Questions.Hard;
+                        choices = Chapter5Choices.Hard;
+                        answers = Chapter5Answers.Hard;
                         break;
                     default:
                         questions = Chapter5Questions.Easy;

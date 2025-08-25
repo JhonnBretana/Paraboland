@@ -59,6 +59,12 @@ public class GoToMap : MonoBehaviour
         var col = GetComponent<Collider2D>();
         if (col) col.enabled = false;
 
+        // Unlock next chapter if on Hard difficulty and transitioning to ChapterSelection
+        if (difficulty == "Hard" && mapSceneToLoad == "ChapterSelection")
+        {
+            ChapterProgress.UnlockChapter(chapter + 1);
+        }
+
         if (TransitionManager.I != null)
         {
             TransitionManager.I.LoadSceneWithTransition(mapSceneToLoad, fadeToBlack, fadeFromBlack);

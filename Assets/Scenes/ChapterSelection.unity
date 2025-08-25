@@ -3100,7 +3100,13 @@ MonoBehaviour:
   - Chapter5_Easy
   fadeToBlack: 0.45
   fadeFromBlack: 0.45
-  selectButton: {fileID: 0}
+  mapImages:
+  - {fileID: 1931543379}
+  - {fileID: 364978625}
+  - {fileID: 136982367}
+  - {fileID: 301498199}
+  - {fileID: 1815172864}
+  selectButton: {fileID: 2126785739}
 --- !u!4 &1554698642
 Transform:
   m_ObjectHideFlags: 0

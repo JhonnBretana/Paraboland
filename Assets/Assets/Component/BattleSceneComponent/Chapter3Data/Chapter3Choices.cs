@@ -18,7 +18,7 @@ public static class Chapter3Choices
         { "A.) x = 3", "B.) x = 13", "C.) x = -3", "D.) x = -13" }
     };
 
-    public static readonly string[,] Difficult = new string[,]
+    public static readonly string[,] Hard = new string[,]
     {
         { "A.) x = 5", "B.) x = -5", "C.) x = 5, -5", "D.) No possible root" },
         { "A.) (7m + 4)(7m + 4)", "B.) (7m + 8)(7m - 2)", "C.) (49m + 2)(m + 8)", "D.) Not a perfect square trinomial" },

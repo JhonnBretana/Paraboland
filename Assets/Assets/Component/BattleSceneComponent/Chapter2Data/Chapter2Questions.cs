@@ -18,7 +18,7 @@ public static class Chapter2Questions
         "What are the roots of the equation 9x²-49=0?"
     };
 
-    public static readonly string[] Difficult = new string[]
+    public static readonly string[] Hard = new string[]
     {
         "Factor x⁴-16.",
         "Which is the CORRECT factorization of 81a⁶-16b²?",

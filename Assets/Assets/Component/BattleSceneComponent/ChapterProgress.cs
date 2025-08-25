@@ -13,4 +13,15 @@ public static class ChapterProgress
         }
         return correct;
     }
+
+    public static void UnlockChapter(int chapter)
+    {
+        PlayerPrefs.SetInt($"Chapter{chapter}_Unlocked", 1);
+        PlayerPrefs.Save();
+    }
+
+    public static bool IsChapterUnlocked(int chapter)
+    {
+        return PlayerPrefs.GetInt($"Chapter{chapter}_Unlocked", chapter == 1 ? 1 : 0) == 1; // Chapter 1 always unlocked
+    }
 }
