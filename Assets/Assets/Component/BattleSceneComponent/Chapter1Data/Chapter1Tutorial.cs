@@ -2,7 +2,7 @@ public static class Chapter1Tutorial
 {
     public static readonly string[] Title = new string[]
     {
-        "Chapter I – Common Monomial Factor",
+        "Chapter I - Common Monomial Factor",
 
     };
     public static readonly string[] Page1 = new string[]

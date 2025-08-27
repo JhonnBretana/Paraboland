@@ -26,7 +26,18 @@ public class TutorialManager : MonoBehaviour
                 title = Chapter2Tutorial.Title;
                 pages = new string[][] { Chapter2Tutorial.Page1, Chapter2Tutorial.Page2, Chapter2Tutorial.Page3 };
                 break;
-            // Add more chapters as needed
+            case 3:
+                title = Chapter3Tutorial.Title;
+                pages = new string[][] { Chapter3Tutorial.Page1, Chapter3Tutorial.Page2, Chapter3Tutorial.Page3 };
+                break;
+            case 4:
+                title = Chapter4Tutorial.Title;
+                pages = new string[][] { Chapter4Tutorial.Page1, Chapter4Tutorial.Page2, Chapter4Tutorial.Page3 };
+                break;
+            case 5:
+                title = Chapter5Tutorial.Title;
+                pages = new string[][] { Chapter5Tutorial.Page1, Chapter5Tutorial.Page2, Chapter5Tutorial.Page3 };
+                break;
             default:
                 title = Chapter1Tutorial.Title;
                 pages = new string[][] { Chapter1Tutorial.Page1, Chapter1Tutorial.Page2, Chapter1Tutorial.Page3 };

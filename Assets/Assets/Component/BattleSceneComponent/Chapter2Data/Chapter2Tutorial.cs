@@ -2,7 +2,7 @@ public static class Chapter2Tutorial
 {
     public static readonly string[] Title = new string[]
     {
-        "Chapter II – Difference of two squares",
+        "Chapter II - Difference of two squares",
 
     };
     public static readonly string[] Page1 = new string[]
