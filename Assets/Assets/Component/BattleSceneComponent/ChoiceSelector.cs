@@ -10,7 +10,6 @@ public class ChoiceSelector : MonoBehaviour
 
     public GameObject resultModalWin;
     public GameObject resultModalLost;
-    public int correctAnswerIndex = 0; // Set this in the Inspector to the correct choice index (0-3)
 
     public GameObject[] objectsToHide; // Assign Character, Patient, Dialog Box, Choices Box in Inspector
     public GameObject dialogBox; // Assign Dialog Box in Inspector
@@ -27,6 +26,8 @@ public class ChoiceSelector : MonoBehaviour
     private string difficulty;
     private int questionIndex;
     private int[] randomizedOrder;
+
+    private string correctAnswerString;
 
     void Start()
     {
@@ -61,7 +62,7 @@ public class ChoiceSelector : MonoBehaviour
         // int answerIdx = Chapter1Answers.Easy[questionIdx];
         string[] questions = null;
         string[,] choices = null;
-        int[] answers = null;
+        string[] answers = null;
 
         switch (chapter)
         {
@@ -213,13 +214,22 @@ public class ChoiceSelector : MonoBehaviour
 
         // int actualIndex = randomizedOrder[questionIndex];
         questionText.text = questions[questionIndex];
+
+        // --- Shuffle choices ---
+        string[] originalChoices = new string[choiceButtons.Length];
+        for (int i = 0; i < choiceButtons.Length; i++)
+            originalChoices[i] = choices[questionIndex, i];
+
+        string correctAnswer = answers[questionIndex]; // Now a string!
+        string[] shuffledChoices;
+        ShuffleChoices(originalChoices, correctAnswer, out shuffledChoices, out correctAnswerString);
+
         for (int i = 0; i < choiceButtons.Length; i++)
         {
             TMP_Text btnText = choiceButtons[i].GetComponentInChildren<TMP_Text>();
             if (btnText != null)
-                btnText.text = choices[questionIndex, i];
+                btnText.text = shuffledChoices[i];
         }
-        correctAnswerIndex = answers[questionIndex];
 
         ShowDialog();
 
@@ -248,10 +258,10 @@ public class ChoiceSelector : MonoBehaviour
 
     void CheckAnswer(int index)
     {
-        if (index == correctAnswerIndex)
+        string chosen = choiceButtons[index].GetComponentInChildren<TMP_Text>().text;
+        if (chosen == correctAnswerString)
         {
             SaveCorrectAnswer();
-            // Only set healed flag after correct answer!
             string houseId = $"House_{chapter}_{difficulty}_{questionIndex}";
             PlayerPrefs.SetInt(houseId + "_Healed", 1);
             PlayerPrefs.Save();
@@ -263,7 +273,7 @@ public class ChoiceSelector : MonoBehaviour
         {
             if (resultModalLost != null) resultModalLost.SetActive(true);
             MusicEffectsManager.PlayLoseBGM();
-            LoseHeart(); // Minus heart on lose
+            LoseHeart();
         }
     }
 
@@ -367,5 +377,23 @@ public class ChoiceSelector : MonoBehaviour
         this.gameObject.SetActive(true);
         if (dialogBox != null)
             dialogBox.SetActive(false);
+    }
+
+    private void ShuffleChoices(string[] choices, string correctAnswer, out string[] shuffled, out string newCorrectAnswer)
+    {
+        shuffled = new string[choices.Length];
+        choices.CopyTo(shuffled, 0);
+
+        // Shuffle
+        for (int i = choices.Length - 1; i > 0; i--)
+        {
+            int j = Random.Range(0, i + 1);
+            string temp = shuffled[i];
+            shuffled[i] = shuffled[j];
+            shuffled[j] = temp;
+        }
+
+        // Find new correct answer string (it doesn't change, just keep it)
+        newCorrectAnswer = correctAnswer;
     }
 }
