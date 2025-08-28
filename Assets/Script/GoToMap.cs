@@ -7,6 +7,8 @@ public class GoToMap : MonoBehaviour
     [Header("Gate Objects")]
     public GameObject gateTransition; // Assign GateTransition in Inspector
     public GameObject gateClose;      // Assign GateClose in Inspector
+    public GameObject portalGuideModal; // Assign PortalGuideModal in Inspector
+    public GameObject portal; // Assign Portal GameObject in Inspector
 
     [Header("Target Map")]
     public string mapSceneToLoad = "MapScene2"; // Set this in Inspector
@@ -27,14 +29,22 @@ public class GoToMap : MonoBehaviour
     {
         int correct = ChapterProgress.CountCorrectAnswers(chapter, difficulty, totalQuestions);
 
+        bool unlocked = correct >= requiredCorrectAnswers;
+
         if (gateTransition != null)
-            gateTransition.SetActive(correct >= requiredCorrectAnswers);
+            gateTransition.SetActive(unlocked);
 
         if (gateClose != null)
-            gateClose.SetActive(correct < requiredCorrectAnswers);
+            gateClose.SetActive(!unlocked);
+
+        if (portalGuideModal != null)
+            portalGuideModal.SetActive(unlocked);
+
+        if (portal != null)
+            portal.SetActive(unlocked); // Show portal only if unlocked
 
         // Optionally, disable this object if not unlocked
-        // gameObject.SetActive(correct >= requiredCorrectAnswers);
+        // gameObject.SetActive(unlocked);
     }
 
     void Reset()

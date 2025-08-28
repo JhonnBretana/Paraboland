@@ -1,11 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement; // Add this
+using UnityEngine.SceneManagement;
 
 public class SettingsManager : MonoBehaviour
 {
     [Header("References")]
     public GameObject settingsModal; // Assign your SettingsModal GameObject here
+    public GameObject portalGuideModal; // Assign your PortalGuideModal GameObject here
 
     // Call this from the Settings button OnClick()
     public void OpenSettings()
@@ -24,7 +25,7 @@ public class SettingsManager : MonoBehaviour
     // Call this from the Clear Records button OnClick()
     public void ClearRecords()
     {
-        PlayerPrefs.DeleteAll(); // Clears all PlayerPrefs (character selection, answers, etc.)
+        PlayerPrefs.DeleteAll();
         PlayerPrefs.Save();
         Debug.Log("All records cleared!");
     }
@@ -40,5 +41,19 @@ public class SettingsManager : MonoBehaviour
     public void GoHome()
     {
         SceneManager.LoadScene("MainMenu");
+    }
+
+    // Call this to open the portal guide modal
+    public void OpenPortalGuide()
+    {
+        if (portalGuideModal != null)
+            portalGuideModal.SetActive(true);
+    }
+
+    // Call this to close the portal guide modal
+    public void ClosePortalGuide()
+    {
+        if (portalGuideModal != null)
+            portalGuideModal.SetActive(false);
     }
 }
