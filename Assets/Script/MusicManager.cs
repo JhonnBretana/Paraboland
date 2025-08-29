@@ -63,6 +63,18 @@ public class MusicManager : MonoBehaviour
                sceneName == "ChapterSelection";
     }
 
+
+    public static float MusicVolume
+    {
+        get => instance != null ? instance.audioSource.volume : 1f;
+        set
+        {
+            if (instance != null)
+                instance.audioSource.volume = Mathf.Clamp01(value);
+        }
+    }
+
+
     bool IsMapScene(string sceneName)
     {
         // Checks if the scene name matches your map naming convention

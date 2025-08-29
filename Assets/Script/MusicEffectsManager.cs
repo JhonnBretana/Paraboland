@@ -43,6 +43,16 @@ public class MusicEffectsManager : MonoBehaviour
         PlayBackgroundMusicForScene(scene.name);
     }
 
+        public static float SFXVolume
+    {
+        get => instance != null ? instance.audioSource.volume : 1f;
+        set
+        {
+            if (instance != null)
+                instance.audioSource.volume = Mathf.Clamp01(value);
+        }
+    }
+
     private void PlayBackgroundMusicForScene(string sceneName)
     {
         AudioClip bgmToPlay = null;
