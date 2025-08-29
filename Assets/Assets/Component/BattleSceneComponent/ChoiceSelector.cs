@@ -19,6 +19,10 @@ public class ChoiceSelector : MonoBehaviour
     public TMP_Text questionText; // Assign in Inspector
 
     public GameObject[] heartIcons; // Assign Heart1, Heart2, Heart3 in Inspector
+
+    public GameObject gameOverPanel; // Assign your Game Over Panel in Inspector
+    public Button gameOverOkButton;  // Assign OK Button in Inspector
+
     private int currentHearts = 3; // Default to 3 hearts
     private const string HeartsKey = "CurrentHearts";
 
@@ -233,6 +237,7 @@ public class ChoiceSelector : MonoBehaviour
 
         ShowDialog();
 
+
         if (resultModalWin != null) resultModalWin.SetActive(false);
         if (resultModalLost != null) resultModalLost.SetActive(false);
         if (confirmationDialog != null) confirmationDialog.SetActive(false);
@@ -245,6 +250,11 @@ public class ChoiceSelector : MonoBehaviour
 
         currentHearts = PlayerPrefs.GetInt(HeartsKey, 3); // Load hearts from PlayerPrefs
         UpdateHeartsUI();
+
+        if (gameOverPanel != null) gameOverPanel.SetActive(false);
+        if (gameOverOkButton != null)
+            gameOverOkButton.onClick.AddListener(OnGameOverOkClicked);
+
     }
     void Update()
     {
@@ -285,7 +295,37 @@ public class ChoiceSelector : MonoBehaviour
             PlayerPrefs.SetInt(HeartsKey, currentHearts); // Save hearts
             PlayerPrefs.Save();
             UpdateHeartsUI();
+
+            if (currentHearts == 0)
+            {
+                ShowGameOverPanel();
+            }
         }
+    }
+
+    void ShowGameOverPanel()
+    {
+        if (gameOverPanel != null)
+            gameOverPanel.SetActive(true);
+
+        SetObjectsToHideActive(false);
+        if (resultModalLost != null) resultModalLost.SetActive(false);
+        if (resultModalWin != null) resultModalWin.SetActive(false);
+        if (confirmationDialog != null) confirmationDialog.SetActive(false);
+    }
+
+    void OnGameOverOkClicked()
+    {
+        PlayerPrefs.DeleteAll();
+        PlayerPrefs.Save();
+
+        // Optionally reset hearts
+        currentHearts = 3;
+        PlayerPrefs.SetInt(HeartsKey, currentHearts);
+        PlayerPrefs.Save();
+
+        // Go to Main Menu scene
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
     }
 
     void UpdateHeartsUI()
