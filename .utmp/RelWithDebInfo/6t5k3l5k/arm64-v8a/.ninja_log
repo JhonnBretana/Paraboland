@@ -1,12 +1,12 @@
 # ninja log v5
-65	640	7768578266636683	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	889d3bfa03bd6150
-642	818	7768578268433154	C:/Users/Kurt Pantaleon/Documents/Unity Projects/Paraboland/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6t5k3l5k/obj/arm64-v8a/libswappywrapper.so	647f0125b206f55f
-30	10854	7768578368639542	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	b7e1d2a930c91cf1
-38	10872	7768578368664887	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	f6063bf927aaa1ce
-55	10928	7768578369355642	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	ef49a5f28d4288a9
-8	10932	7768578369355642	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	eb4050acacdba89b
-15	11039	7768578370526078	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	bf586f72e08f9ed3
-46	11063	7768578370817316	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	699a339359430718
-23	11448	7768578374622521	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	7e1229f585036a1a
-1	11605	7768578376181799	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	a6aacfaa0f9bca1
-11606	11732	7768578377529283	C:/Users/Kurt Pantaleon/Documents/Unity Projects/Paraboland/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6t5k3l5k/obj/arm64-v8a/libgame.so	e0c5ead30e97d482
+63	558	7785261772717716	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	889d3bfa03bd6150
+562	774	7785261774865419	C:/Users/Kurt Pantaleon/Documents/Unity Projects/Paraboland/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6t5k3l5k/obj/arm64-v8a/libswappywrapper.so	647f0125b206f55f
+22	2144	7785261788528490	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	b7e1d2a930c91cf1
+37	2158	7785261788503251	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	f6063bf927aaa1ce
+44	2203	7785261789123087	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	ef49a5f28d4288a9
+15	2205	7785261789123087	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	eb4050acacdba89b
+53	2289	7785261789971065	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	699a339359430718
+8	2300	7785261790086372	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	bf586f72e08f9ed3
+30	2501	7785261792153093	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	7e1229f585036a1a
+1	2594	7785261793058719	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	a6aacfaa0f9bca1
+2595	2715	7785261794317299	C:/Users/Kurt Pantaleon/Documents/Unity Projects/Paraboland/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6t5k3l5k/obj/arm64-v8a/libgame.so	e0c5ead30e97d482
