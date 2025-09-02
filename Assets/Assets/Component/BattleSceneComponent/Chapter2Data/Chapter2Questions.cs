@@ -22,7 +22,7 @@ public static class Chapter2Questions
     {
         "Factor x⁴-16.",
         "Which is the CORRECT factorization of 81a⁶-16b²?",
-        "Factor the expression x²-149.",
+        "Factor the expression x²-<sup>1</sup>/<sub>49</sub>.",
         "Solve for x: 4x²-49=0.",
         "If a²+b²=0, which of the following must be TRUE?"
     };

@@ -20,10 +20,10 @@ public static class Chapter1Choices
 
     public static readonly string[,] Hard = new string[,]
     {
-        { "x = 0 and x = -4", "x=0 and x=-23", "x = -1.5 and x = 0", "x = 0 and x = -1" },
-        { "x=0 and x=43", "x=0 and x=34", "x = 0 and x = -4", "x = -3 and x = -4" },
+        { "x = 0 and x = -4", "x = 0 and x = -<sup>2</sup>/<sub>3</sub>", "x = -1.5 and x = 0", "x = 0 and x = -1" },
+        { "x=0 and x=<sup>4</sup>/<sub>3</sub>", "x=0 and x=<sup>3</sup>/<sub>4</sub>", "x = 0 and x = -4", "x = -3 and x = -4" },
         { "3x²y(2x - y)", "3x²y²(2 - 1)", "3x²y(2x - y²)", "3xy(2x² - y)" },
         { "x = 0 and x = -2", "x = 0 and x = -3", "x = 0 and x = 3", "x = 0 and x = -1/3" },
-        { "5mn(2m² + m)", "5mn²(2m² + 1)", "5m²n(2m + 1)", "10mn(2m² + 1)" }
+        { "5mn(2m² + m)", "5mn²(2m² + 1)", "5m²n(2mn + 1)", "10mn(2m² + 1)" }
     };
 }

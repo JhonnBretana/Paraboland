@@ -15,10 +15,10 @@ public static class Chapter1Answers
         "x = 0 and x = -2"
     };
     public static readonly string[] Hard = {
-        "x = 0 and x = -4",
-        "x=0 and x=43",
+        "x = 0 and x = -<sup>2</sup>/<sub>3</sub>",
+        "x=0 and x=<sup>4</sup>/<sub>3</sub>",
         "3x²y(2x - y)",
         "x = 0 and x = -1/3",
-        "5m²n(2m + 1)"
+        "5m²n(2mn + 1)"
     };
 }
